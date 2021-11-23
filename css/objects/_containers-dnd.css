@@ -10,11 +10,13 @@
 }
 
 .dnd-section > .row-fluid {
+  max-width: var(--main);
   margin: 0 auto;
+  padding: var(--section-padding-vertical) var(--section-padding-horizontal);
 }
 
 .dnd-section .dnd-column {
-  padding: 0 1rem;
+  /* padding: 0 1rem; */
 }
 
 @media (max-width: 767px) {

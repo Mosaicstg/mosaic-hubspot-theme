@@ -7,6 +7,22 @@
   --theme-light-gray: #ededed;
   --theme-white: #fff;
 
+  /* Device Widths */
+  --desktop: 1200px;
+  --tablet: 960px;
+  --xs-tablet: 768px;
+  --phone: 480px;
+
+  /* Margin Widths */
+  --main: var(--desktop);
+  --lg: var(--tablet);
+  --md: var(--xs-tablet);
+  --sm: var(--phone);
+
+  /* Section padding */
+  --section-padding-vertical: 200px;
+  --section-padding-horizontal: 20px;
+
   /* Typography */
   --font-family: 'DM Sans';
   --font-weight-normal: 400;
@@ -32,6 +48,9 @@
   --button-color: var(--theme-blue);
   --button-background: var(--theme-blue);
   --button-border-color: var(--theme-blue);
+
+  /* Grid */
+  --grid-gap: 30px;
 
   /* --h6-font-size: 72px; */
   /* --h6-line-height: 64px; */

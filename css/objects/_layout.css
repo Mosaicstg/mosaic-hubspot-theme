@@ -347,6 +347,7 @@
 .row-fluid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  grid-gap: var(--grid-gap);
 }
 
 .row-fluid:before,
@@ -364,6 +365,46 @@
   grid-column: span 12;
 }
 
+.row-fluid .span11 {
+  grid-column: span 11;
+}
+
+.row-fluid .span10 {
+  grid-column: span 10;
+}
+
+.row-fluid .span9 {
+  grid-column: span 9;
+}
+
+.row-fluid .span8 {
+  grid-column: span 8;
+}
+
+.row-fluid .span7 {
+  grid-column: span 7;
+}
+
 .row-fluid .span6 {
   grid-column: span 6;
+}
+
+.row-fluid .span5 {
+  grid-column: span 5;
+}
+
+.row-fluid .span4 {
+  grid-column: span 4;
+}
+
+.row-fluid .span3 {
+  grid-column: span 3;
+}
+
+.row-fluid .span2 {
+  grid-column: span 2;
+}
+
+.row-fluid .span1 {
+  grid-column: span 1;
 }
