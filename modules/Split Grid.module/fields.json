@@ -1,0 +1,17 @@
+[ {
+  "id" : "cd469da0-c468-13b1-8744-4593f9405c02",
+  "name" : "richtext_field",
+  "label" : "Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>This is my split grid module</p>"
+}, {
+  "id" : "f824cfbd-94cc-8e02-fb63-e0c6001ecc12",
+  "name" : "richtext_field_1",
+  "label" : "Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Another rich text field</p>"
+} ]
