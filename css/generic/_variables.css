@@ -1,0 +1,38 @@
+:root {
+  /* Colors */
+  --theme-black: #333;
+  --theme-blue: #516984;
+  --theme-dark-blue: #88abc4;
+  --theme-gray: #ebebeb;
+  --theme-light-gray: #ededed;
+  --theme-white: #fff;
+
+  /* Typography */
+  --font-family: 'DM Sans';
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+
+  --h1-font-size: 72px;
+  --h1-line-height: 64px;
+  --h2-font-size: 54px;
+  --h2-line-height: 57px;
+  --h3-font-size: 32px;
+  --h3-line-height: 41px;
+  --h4-font-size: 26px;
+  --h4-line-height: 32px;
+  --h5-font-size: 14px;
+  --h5-line-height: 24px;
+  --body-font-size: 16px;
+  --body-line-height: 22px;
+
+  /* Button */
+  --button-font-size: 16px;
+  --button-font-weight: var(--font-weight-bold);
+  --button-line-heightt: 16px;
+  --button-color: var(--theme-blue);
+  --button-background: var(--theme-blue);
+  --button-border-color: var(--theme-blue);
+
+  /* --h6-font-size: 72px; */
+  /* --h6-line-height: 64px; */
+}
