@@ -1,11 +1,11 @@
 :root {
   /* Colors */
-  --theme-black: #333;
-  --theme-blue: #516984;
-  --theme-dark-blue: #88abc4;
-  --theme-gray: #ebebeb;
-  --theme-light-gray: #ededed;
-  --theme-white: #fff;
+  --theme-primary: #333;
+  --theme-secondary: #88abc4;
+  --theme-tertiery: #516984;
+  --theme-quaternary: #ebebeb;
+  --theme-quinary: #ededed;
+  --theme-senary: #fff;
 
   /* Device Widths */
   --desktop: 1200px;
@@ -28,16 +28,55 @@
   --font-weight-normal: 400;
   --font-weight-bold: 700;
 
+  --h1-color: var(--theme-primary);
+  --h1-font: var(--font-family);
   --h1-font-size: 72px;
+  --h1-font-weight: var(--font-weight-bold);
   --h1-line-height: 64px;
+  --h1-letter-spacing: 0px;
+  --h1-text-transform: none;
+
+  --h2-color: var(--theme-primary);
+  --h2-font: var(--font-family);
   --h2-font-size: 54px;
+  --h2-font-weight: var(--font-weight-bold);
   --h2-line-height: 57px;
+  --h2-letter-spacing: 0px;
+  --h2-text-transform: none;
+
+  --h3-color: var(--theme-primary);
+  --h3-font: var(--font-family);
   --h3-font-size: 32px;
+  --h3-font-weight: var(--font-weight-normal);
   --h3-line-height: 41px;
+  --h3-letter-spacing: 0px;
+  --h3-text-transform: none;
+
+  --h4-color: var(--theme-primary);
+  --h4-font: var(--font-family);
   --h4-font-size: 26px;
+  --h4-font-weight: var(--font-weight-normal);
   --h4-line-height: 32px;
+  --h4-letter-spacing: 0px;
+  --h4-text-transform: none;
+
+  --h5-color: var(--theme-primary);
+  --h5-font: var(--font-family);
   --h5-font-size: 14px;
+  --h5-font-weight: var(--font-weight-normal);
   --h5-line-height: 24px;
+  --h5-letter-spacing: 4.2px;
+  --h5-text-transform: uppercase;
+
+  --h6-color: var(--theme-primary);
+  --h6-font: var(--font-family);
+  --h6-font-size: 14px;
+  --h6-font-weight: var(--font-weight-normal);
+  --h6-line-height: 24px;
+  --h6-letter-spacing: 0px;
+  --h6-text-transform: none;
+
+  --body-font: var(--font-family);
   --body-font-size: 16px;
   --body-line-height: 22px;
 
@@ -45,9 +84,9 @@
   --button-font-size: 16px;
   --button-font-weight: var(--font-weight-bold);
   --button-line-heightt: 16px;
-  --button-color: var(--theme-blue);
-  --button-background: var(--theme-blue);
-  --button-border-color: var(--theme-blue);
+  --button-color: var(--theme-senary);
+  --button-background: var(--theme-tertiery);
+  --button-border-color: var(--theme-tertiery);
 
   /* Grid */
   --grid-gap: 30px;
