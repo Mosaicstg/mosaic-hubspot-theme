@@ -192,6 +192,26 @@
             }
           },
           {
+            "label": "Line Height",
+            "name": "line_height",
+            "type": "number",
+            "display": "text",
+            "max": 100,
+            "step": 1,
+            "suffix": "px",
+            "default": 64
+          },
+          {
+            "label": "Letter Spacing",
+            "name": "letter_spacing",
+            "type": "number",
+            "display": "text",
+            "max": 100,
+            "step": 1,
+            "suffix": "px",
+            "default": 0
+          },
+          {
             "label": "Transform",
             "name": "transform",
             "type": "choice",
@@ -231,6 +251,26 @@
               },
               "variant": "700"
             }
+          },
+          {
+            "label": "Line Height",
+            "name": "line_height",
+            "type": "number",
+            "display": "text",
+            "max": 100,
+            "step": 1,
+            "suffix": "px",
+            "default": 0
+          },
+          {
+            "label": "Letter Spacing",
+            "name": "letter_spacing",
+            "type": "number",
+            "display": "text",
+            "max": 100,
+            "step": 1,
+            "suffix": "px",
+            "default": 0
           },
           {
             "label": "Transform",
@@ -274,6 +314,26 @@
             }
           },
           {
+            "label": "Line Height",
+            "name": "line_height",
+            "type": "number",
+            "display": "text",
+            "max": 100,
+            "step": 1,
+            "suffix": "px",
+            "default": 0
+          },
+          {
+            "label": "Letter Spacing",
+            "name": "letter_spacing",
+            "type": "number",
+            "display": "text",
+            "max": 100,
+            "step": 1,
+            "suffix": "px",
+            "default": 0
+          },
+          {
             "label": "Transform",
             "name": "transform",
             "type": "choice",
@@ -313,6 +373,26 @@
               },
               "variant": "400"
             }
+          },
+          {
+            "label": "Line Height",
+            "name": "line_height",
+            "type": "number",
+            "display": "text",
+            "max": 100,
+            "step": 1,
+            "suffix": "px",
+            "default": 0
+          },
+          {
+            "label": "Letter Spacing",
+            "name": "letter_spacing",
+            "type": "number",
+            "display": "text",
+            "max": 100,
+            "step": 1,
+            "suffix": "px",
+            "default": 0
           },
           {
             "label": "Transform",
@@ -356,6 +436,26 @@
             }
           },
           {
+            "label": "Line Height",
+            "name": "line_height",
+            "type": "number",
+            "display": "text",
+            "max": 100,
+            "step": 1,
+            "suffix": "px",
+            "default": 0
+          },
+          {
+            "label": "Letter Spacing",
+            "name": "letter_spacing",
+            "type": "number",
+            "display": "text",
+            "max": 100,
+            "step": 1,
+            "suffix": "px",
+            "default": 0
+          },
+          {
             "label": "Transform",
             "name": "transform",
             "type": "choice",
@@ -395,6 +495,26 @@
               },
               "variant": "400"
             }
+          },
+          {
+            "label": "Line Height",
+            "name": "line_height",
+            "type": "number",
+            "display": "text",
+            "max": 100,
+            "step": 1,
+            "suffix": "px",
+            "default": 0
+          },
+          {
+            "label": "Letter Spacing",
+            "name": "letter_spacing",
+            "type": "number",
+            "display": "text",
+            "max": 100,
+            "step": 1,
+            "suffix": "px",
+            "default": 0
           },
           {
             "label": "Transform",
@@ -437,6 +557,26 @@
               "size": 16,
               "size_unit": "px"
             }
+          },
+          {
+            "label": "Line Height",
+            "name": "line_height",
+            "type": "number",
+            "display": "text",
+            "max": 100,
+            "step": 1,
+            "suffix": "px",
+            "default": 22
+          },
+          {
+            "label": "Letter Spacing",
+            "name": "letter_spacing",
+            "type": "number",
+            "display": "text",
+            "max": 100,
+            "step": 1,
+            "suffix": "px",
+            "default": 0
           }
         ]
       },
@@ -498,8 +638,29 @@
             "default": {
               "color": "#FFFFFF",
               "size": 16,
-              "size_unit": "px"
+              "size_unit": "px",
+              "variant": 700
             }
+          },
+          {
+            "label": "Line Height",
+            "name": "line_height",
+            "type": "number",
+            "display": "text",
+            "max": 100,
+            "step": 1,
+            "suffix": "px",
+            "default": 0
+          },
+          {
+            "label": "Letter Spacing",
+            "name": "letter_spacing",
+            "type": "number",
+            "display": "text",
+            "max": 100,
+            "step": 1,
+            "suffix": "px",
+            "default": 0
           },
           {
             "label": "Transform",
