@@ -91,6 +91,8 @@
 {% set button_text_transform = theme.buttons.text.transform %}
 {% set button_bg_color = color(theme.buttons.background.color) %}
 {% set button_border = theme.buttons.border.border.css %}
+{% set button_border_obj = theme.buttons.border.border %}
+{% set button_border_color = theme.buttons.border.border.color %}
 {% set button_corner_radius = theme.buttons.corner.radius ~ 'px' %}
 {% set button_spacing = theme.buttons.spacing.spacing.css %}
 
@@ -135,6 +137,22 @@
 
 {% set footer_bg_color = color(theme.footer.background.color) %}
 {% set footer_font_color = theme.footer.text.color.color %}
+
+{% set button_border_top_width = button_border_obj.top.width.value ~ button_border_obj.top.width.units %}
+{% set button_border_right_width = button_border_obj.right.width.value ~ button_border_obj.right.width.units %}
+{% set button_border_bottom_width = button_border_obj.bottom.width.value ~ button_border_obj.bottom.width.units %}
+{% set button_border_left_width = button_border_obj.left.width.value ~ button_border_obj.left.width.units %}
+
+{% set button_border_top_style = button_border_obj.top.style %}
+{% set button_border_right_style = button_border_obj.right.style %}
+{% set button_border_bottom_style = button_border_obj.bottom.style %}
+{% set button_border_left_style = button_border_obj.left.style %}
+
+{% set button_border_top_color = button_border_obj.top.color %}
+{% set button_border_right_color = button_border_obj.right.color %}
+{% set button_border_bottom_color = button_border_obj.bottom.color %}
+{% set button_border_left_color = button_border_obj.left.color %}
+
 
   /* TODO: Wire up 'line-height' and 'letter-spacing' fields */
 body {
@@ -203,6 +221,31 @@ body {
 
   --button-font-size: {{button_font.size ~ button_font.size_unit}};
   --button-font-weight: {{button_font.variant}};
+  --button-line-height: {{button_line_height}};
+  --button-letter-spacing: {{button_letter_spacing}};
+  --button-background: {{button_bg_color}};
+  --button-border-color: {{button_border_color}};
+  --button-border-radius: {{button_corner_radius}};
+
+  /* Button Border Width */
+  --button-top-width: {{button_border_top_width}};
+  --button-right-width: {{button_border_right_width}};
+  --button-bottom-width: {{button_border_bottom_width}};
+  --button-left-width: {{button_border_left_width}};
+
+  /* Button Border Style */
+  --button-top-style: {{button_border_top_style}};
+  --button-right-style: {{button_border_right_style}};
+  --button-bottom-style: {{button_border_bottom_style}};
+  --button-left-style: {{button_border_left_style}};
+
+  /* Button Border Color */
+  --button-top-color: {{button_border_top_color}};
+  --button-right-color: {{button_border_right_color}};
+  --button-bottom-color: {{button_border_bottom_color}};
+  --button-left-color: {{button_border_left_color}};
+
+  /* {{theme.buttons.border.border|pprint}} */
 }
 
 {###########################################################################}
@@ -210,7 +253,7 @@ body {
 {###########################################################################}
 
 .content-wrapper {
-  max-width: 90%;
+  max-width: {{ container_width }};
   margin: 0 auto;
 }
 

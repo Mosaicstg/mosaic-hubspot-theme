@@ -83,10 +83,35 @@
   /* Button */
   --button-font-size: 16px;
   --button-font-weight: var(--font-weight-bold);
-  --button-line-heightt: 16px;
+  --button-line-height: 19px;
   --button-color: var(--theme-senary);
   --button-background: var(--theme-tertiery);
   --button-border-color: var(--theme-tertiery);
+
+  --border-top-width: 1px;
+  --border-right-width: 1px;
+  --border-bottom-width: 1px;
+  --border-left-width: 1px;
+
+  --button-border-radius: 0;
+
+  /* Button Border Width */
+  --button-top-width: 1px;
+  --button-right-width: 1px;
+  --button-bottom-width: 1px;
+  --button-left-width: 1px;
+
+  /* Button Border Style */
+  --button-top-style: solid;
+  --button-right-style: solid;
+  --button-bottom-style: solid;
+  --button-left-style: solid;
+
+  /* Button Border Color */
+  --button-top-color: var(--theme-tertiery);
+  --button-right-color: var(--theme-tertiery);
+  --button-bottom-color: var(--theme-tertiery);
+  --button-left-color: var(--theme-tertiery);
 
   /* Grid */
   --grid-gap: 30px;
