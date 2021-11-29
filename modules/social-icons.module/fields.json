@@ -1,0 +1,199 @@
+[ {
+  "id" : "4872e31e-aa97-2448-094d-bcd790d7157d",
+  "name" : "twitter",
+  "label" : "Twitter",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "dc023412-6f25-3467-6912-59b7ba3ce949",
+    "name" : "icon",
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "<i class=\"fab fa-twitter\"></i>"
+  }, {
+    "id" : "b3d1aa83-0788-2152-5765-84ad96955e51",
+    "name" : "link",
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://twitter.com/",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "ef4985ef-7653-e529-c794-0714f64cf4d5",
+    "name" : "color",
+    "label" : "Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#516984",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "icon" : "<i class=\"fab fa-twitter\"></i>",
+    "link" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://twitter.com/",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "color" : {
+      "color" : "#516984",
+      "opacity" : 100
+    }
+  }
+}, {
+  "id" : "42d37d40-3be3-97f4-b573-537c31daefb6",
+  "name" : "facebook",
+  "label" : "Facebook",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "2feea57e-f889-7a56-b8c2-def49a8a2998",
+    "name" : "icon",
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "<i class=\"fab fa-facebook-f\"></i>"
+  }, {
+    "id" : "bb5128d0-3102-cab9-eb4e-d61c12d38ff0",
+    "name" : "link",
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.facebook.com/",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "69819791-e869-448b-a824-fa84d2e0be4c",
+    "name" : "color",
+    "label" : "Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#516984",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "icon" : "<i class=\"fab fa-facebook-f\"></i>",
+    "link" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.facebook.com/",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "color" : {
+      "color" : "#516984",
+      "opacity" : 100
+    }
+  }
+}, {
+  "id" : "f5d252f7-f077-f10e-318a-7b376f4fca0f",
+  "name" : "instagram",
+  "label" : "Instagram",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "49b1c5ea-7a31-6030-53e6-449688f0ef8f",
+    "name" : "icon",
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "<i class=\"fab fa-instagram\"></i>"
+  }, {
+    "id" : "3567ee06-f219-8ac8-eeaf-5c07e5a2a896",
+    "name" : "link",
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.instagram.com/",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "a9343a09-c381-88e1-d5ae-79a7f8e33b6f",
+    "name" : "color",
+    "label" : "Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#516984",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "icon" : "<i class=\"fab fa-instagram\"></i>",
+    "link" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.instagram.com/",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "color" : {
+      "color" : "#516984",
+      "opacity" : 100
+    }
+  }
+} ]
