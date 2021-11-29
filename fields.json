@@ -260,7 +260,7 @@
             "max": 100,
             "step": 1,
             "suffix": "px",
-            "default": 0
+            "default": 57
           },
           {
             "label": "Letter Spacing",
@@ -321,7 +321,7 @@
             "max": 100,
             "step": 1,
             "suffix": "px",
-            "default": 0
+            "default": 41
           },
           {
             "label": "Letter Spacing",
@@ -382,7 +382,7 @@
             "max": 100,
             "step": 1,
             "suffix": "px",
-            "default": 0
+            "default": 32
           },
           {
             "label": "Letter Spacing",
@@ -443,7 +443,7 @@
             "max": 100,
             "step": 1,
             "suffix": "px",
-            "default": 0
+            "default": 24
           },
           {
             "label": "Letter Spacing",
@@ -453,7 +453,7 @@
             "max": 100,
             "step": 1,
             "suffix": "px",
-            "default": 0
+            "default": 4.2
           },
           {
             "label": "Transform",
@@ -488,7 +488,7 @@
               }
             },
             "default": {
-              "size": 14,
+              "size": 16,
               "size_unit": "px",
               "styles": {
                 "text-decoration": "none"
@@ -504,7 +504,7 @@
             "max": 100,
             "step": 1,
             "suffix": "px",
-            "default": 0
+            "default": 19
           },
           {
             "label": "Letter Spacing",
