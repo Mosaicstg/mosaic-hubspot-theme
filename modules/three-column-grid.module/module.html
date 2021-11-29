@@ -1,0 +1,44 @@
+<div class="row">
+  
+
+{% set href = module.column_1.link.url.href %}
+{% if module.column_1.link.url.type is equalto "EMAIL_ADDRESS" %}
+	{% set href = "mailto:" + href %}
+{% endif %}
+<a href="{{ href }}"
+	{% if module.column_1.link.open_in_new_tab %}target="_blank"{% endif %}
+	{% if module.column_1.link.rel %}rel="{{ module.column_1.link.rel }}"{% endif %}
+	>
+	    <div class="column" style="background-color: {{ module.column_1.background_color.color }}; padding: 20px 10px; ">
+      <h4 style="text-align: center; color: #fff;">{{ module.column_1.text }}</h4>
+    </div>
+</a>
+
+{% set href = module.column_2.link.url.href %}
+{% if module.column_2.link.url.type is equalto "EMAIL_ADDRESS" %}
+	{% set href = "mailto:" + href %}
+{% endif %}
+<a href="{{ href }}"
+	{% if module.column_2.link.open_in_new_tab %}target="_blank"{% endif %}
+	{% if module.column_2.link.rel %}rel="{{ module.column_2.link.rel }}"{% endif %}
+	>
+	    <div class="column" style="background-color: {{ module.column_2.background_color.color }}; padding: 20px 10px;  ">
+      <h4 style="text-align: center; color: #fff;">{{ module.column_2.text }}</h4>
+    </div>
+</a>
+
+{% set href = module.column_1.link.url.href %}
+{% if module.column_1.link.url.type is equalto "EMAIL_ADDRESS" %}
+	{% set href = "mailto:" + href %}
+{% endif %}
+<a href="{{ href }}"
+	{% if module.column_3.link.open_in_new_tab %}target="_blank"{% endif %}
+	{% if module.column_3.link.rel %}rel="{{ module.column_3.link.rel }}"{% endif %}
+	>
+	    <div class="column" style="background-color: {{ module.column_3.background_color.color }}; padding: 20px 10px;  ">
+      <h4 style="text-align: center; color: #fff;">{{ module.column_3.text }}</h4>
+    </div>
+</a>
+
+</div>
+
