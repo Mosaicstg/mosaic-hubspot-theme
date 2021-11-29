@@ -1,0 +1,27 @@
+<!--
+  templateType: section
+  label: Multi-row content
+  isAvailableForNewContent: true
+  screenshotPath: ../images/section-previews/two-row-content.png
+  description: "Two column layout. Each column has a rich text area."
+-->
+{% dnd_section
+  vertical_alignment='TOP'
+%}
+  {% dnd_module
+    path='@hubspot/rich_text',
+    html={{ context.content || '<h3>Sea levels continue to rise, threatening millions of families across the globe.</h3>' }}
+    offset=0,
+    width=6
+  %}
+
+  {% end_dnd_module %}
+  {% dnd_module
+    path='@hubspot/rich_text',
+    html={{ context.content || '<p>In the United States, almost 40 percent of the population lives in relatively high population-density coastal areas, where sea level plays a role in flooding, shoreline erosion, and hazards from storms. Globally, 8 of the world’s 10 largest cities are near a coast, according to the U.N. Atlas of the Oceans. </p><p>In urban settings along coastlines around the world, rising seas threaten infrastructure necessary for local jobs and regional industries. Roads, bridges, subways, water supplies, oil and gas wells, power plants, sewage treatment plants, landfills—the list is practically endless—are all at risk from sea level rise.</p> <a href="#">Learn how you can help →</a>' }}
+    offset=6,
+    width=6
+  %}
+
+  {% end_dnd_module %}
+{% end_dnd_section %}
