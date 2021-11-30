@@ -116,6 +116,38 @@
   /* Grid */
   --grid-gap: 30px;
 
-  /* --h6-font-size: 72px; */
-  /* --h6-line-height: 64px; */
+  /* Header */
+  --header-color: var(--theme-primary);
+  --header-background: var(--theme-senary);
+
+  --header-nav-link-color: var(--theme-primary);
+  --header-nav-link-font: var(--font-family);
+  --header-nav-link-font-size: 16px;
+  --header-nav-link-font-weight: 700;
+  --header-nav-link-line-height: 14px;
+  --header-nav-link-letter-spacing: 0px;
+
+  --header-sub-nav-background: #f5f5f5;
+  --header-sub-nav-link-color: var(--theme-primary);
+  --header-sub-nav-link-font: var(--font-family);
+  --header-sub-nav-link-font-size: var(--header-nav-link-font-size);
+  --header-sub-nav-link-font-weight: var(--header-nav-link-font-weight);
+  --header-sub-nav-link-line-height: var(--header-nav-link-line-height);
+  --header-sub-nav-link-letter-spacing: var(--header-nav-link-letter-spacing);
+
+  /* Footer */
+  --footer-background: var(--theme-tertiery);
+  --footer-color: var(--theme-senary);
+  --footer-font-size: 16px;
+  --footer-line-height: 22px;
+  --footer-letter-spacing: 0px;
+  --footer-text-transform: none;
+
+  --footer-nav-link-color: var(--theme-senary);
+  --footer-nav-link-font: var(--font-family);
+  --footer-nav-link-font-size: 16px;
+  --footer-nav-link-font-weight: 700;
+  --footer-nav-link-line-height: 14px;
+  --footer-nav-link-letter-spacing: 0px;
+
 }

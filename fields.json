@@ -650,7 +650,7 @@
             "max": 100,
             "step": 1,
             "suffix": "px",
-            "default": 0
+            "default": 14
           },
           {
             "label": "Letter Spacing",
@@ -1298,6 +1298,33 @@
             "name": "text",
             "type": "group",
             "children": [
+              {
+                "label": "Font",
+                "name": "font",
+                "type": "font",
+                "inherited_value": {
+                  "font": "theme.global_fonts.secondary.font",
+                  "font_set": "theme.global_fonts.secondary.font_set"
+                },
+                "default": {
+                  "size": 16,
+                  "size_unit": "px",
+                  "styles": {
+                    "text-decoration": "none"
+                  },
+                  "variant": "400"
+                }
+              },
+              {
+                "label": "Line Height",
+                "name": "line_height",
+                "type": "number",
+                "display": "text",
+                "max": 100,
+                "step": 1,
+                "suffix": "px",
+                "default": 14
+              },
               {
                 "label": "Color",
                 "name": "color",
