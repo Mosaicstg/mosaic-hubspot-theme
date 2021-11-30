@@ -1,8 +1,9 @@
 {
-  "label": "Mosaic Hackathon",
+  "label": "Mosaic HubSpot Theme",
   "preview_path": "./templates/home.html",
   "screenshot_path": "./images/template-previews/theme-preview.png",
   "enable_domain_stylesheets": false,
+  "version": "1.0",
   "is_available_for_new_content": true,
   "responsive_breakpoints": [
     {
@@ -14,5 +15,11 @@
       "mediaQuery": "@media (max-width: 767px)"
     }
   ],
+  "author": {
+    "name": "Mosaic Strategies Group",
+    "email": "services@mosaicstg.com",
+    "url": "https://www.mosaicstg.com/"
+  },
+  "documentation_url": "https://github.com/Mosaicstg/mosaic-hubspot-theme/wiki",
   "license": "./license.txt"
 }
