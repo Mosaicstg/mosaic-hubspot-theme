@@ -5,10 +5,49 @@
   screenshotPath: ../images/section-previews/call-to-action.png
   description: "Full-width three column layout."
 -->
-{% dnd_section  max_width={{ context.max_width || 1400 }} 
+{% dnd_section  id ="call-to-action" max_width={{ context.max_width || 1400 }}, padding={
+'default': {
+  'top': 0,
+  'right': 0,
+  'bottom': 0,
+  'left': 0
+},
+'mobile': {
+  'top': 0,
+  'right': 0,
+  'bottom': 0,
+  'left': 0
+}
+} 
 %}
-  {% dnd_column %}
-    {% dnd_row  %}
+  {% dnd_column padding={
+  'default': {
+    'top': 0,
+    'right': 0,
+    'bottom': 0,
+    'left': 0
+  },
+  'mobile': {
+    'top': 0,
+    'right': 0,
+    'bottom': 0,
+    'left': 0
+  }
+  } %}
+    {% dnd_row  padding={
+    'default': {
+      'top': 0,
+      'right': 0,
+      'bottom': 0,
+      'left': 0
+    },
+    'mobile': {
+      'top': 0,
+      'right': 0,
+      'bottom': 0,
+      'left': 0
+    }
+    } %}
       {% dnd_module path='../modules/three-column-grid.module' %}
       {% end_dnd_module %}
     {% end_dnd_row %}
