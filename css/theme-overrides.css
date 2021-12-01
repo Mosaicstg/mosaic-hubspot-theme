@@ -130,6 +130,10 @@
 {% set nav_drop_down_font_color = theme.header.menu.drop_downs.text.color.color %}
 {% set nav_drop_down_bg_color = color(theme.header.menu.drop_downs.background.color) %}
 {% set nav_drop_down_border = theme.header.menu.drop_downs.border.border.css %}
+{% set nav_menu_font = theme.header.menu.text.font %}
+{% set nav_menu_line_height = theme.header.menu.text.line_height %}
+{% set nav_menu_letter_spacing = theme.header.menu.text.letter_spacing %}
+{% set nav_menu_text_transform = theme.header.menu.text.transform %}
 
 {% set header_bg_color = color(theme.header.background.color) %}
 
@@ -244,6 +248,18 @@ body {
   --button-right-color: {{button_border_right_color}};
   --button-bottom-color: {{button_border_bottom_color}};
   --button-left-color: {{button_border_left_color}};
+
+  /* Header */
+  --header-color: {{nav_font_color}};
+  --header-background: {{header_bg_color}};
+
+  --header-nav-link-color: {{nav_menu_font.color}};
+  --header-nav-link-font: '{{nav_menu_font.font}}', sans-serif;
+  --header-nav-link-font-size: {{nav_menu_font.size ~ nav_menu_font.size_unit}};
+  --header-nav-link-font-weight: {{nav_menu_font.variant}};
+  --header-nav-link-line-height: {{nav_menu_line_height ~ 'px'}};
+  --header-nav-link-letter-spacing: {{nav_menu_letter_spacing ~ 'px'}};
+  --header-nav-link-text-transform: {{nav_menu_text_transform}};
 
   /* {{theme.buttons.border.border|pprint}} */
 }
@@ -494,8 +510,8 @@ tfoot td {
 .header__logo .logo-company-name,
 .header__language-switcher-label-current,
 .header__language-switcher .lang_list_class li a {
-  color: {{ nav_font_color }};
-  font-family: {{ body_font.font }};
+  /* color: {{ nav_font_color }}; */
+  /* font-family: {{ body_font.font }}; */
 }
 
 .menu__child-toggle-icon {
