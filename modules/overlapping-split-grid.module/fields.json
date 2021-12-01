@@ -1,0 +1,61 @@
+[ {
+  "id" : "ca593625-5077-e14f-d2fa-a85ded224b5c",
+  "name" : "image",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent10.net/hubfs/21052062/olivia-bauso-6oRBgkX9UMI-unsplash.jpg",
+    "alt" : "olivia-bauso-6oRBgkX9UMI-unsplash",
+    "loading" : "lazy",
+    "width" : 669,
+    "height" : 714,
+    "max_width" : 669,
+    "max_height" : 714
+  }
+}, {
+  "id" : "b234f62c-9a25-2cf5-0046-f87e3e40a849",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "be8dc8a4-efc3-9269-df75-91b48c64dc1d",
+    "name" : "text",
+    "display_width" : null,
+    "label" : "Text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h3>Every family and individual deserves a safe place to reside without fear of the future.</h3>\n<p>We partner with families and individuals whose homes are in compromised locations to protect and provide safe and adequate housing.</p>\n<p>How it works →</p>"
+  }, {
+    "id" : "cdea5c5e-8c88-f2e4-6dc7-c8c674b66270",
+    "name" : "content_background_color",
+    "display_width" : null,
+    "label" : "Content Background Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#F5F5F5",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "text" : "<h3>Every family and individual deserves a safe place to reside without fear of the future.</h3>\n<p>We partner with families and individuals whose homes are in compromised locations to protect and provide safe and adequate housing.</p>\n<p>How it works →</p>",
+    "content_background_color" : {
+      "color" : "#F5F5F5",
+      "opacity" : 100
+    }
+  }
+} ]
