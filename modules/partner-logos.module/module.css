@@ -1,0 +1,9 @@
+.logos {
+  width: 90%;
+  margin: 0 auto;
+}
+.logo {
+  float: left;
+  width: 20%;
+  padding: 50px 0;
+}
