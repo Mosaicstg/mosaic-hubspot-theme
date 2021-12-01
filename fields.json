@@ -639,7 +639,7 @@
               "color": "#FFFFFF",
               "size": 16,
               "size_unit": "px",
-              "variant": 700
+              "variant": "700"
             }
           },
           {
@@ -1303,8 +1303,12 @@
                 "name": "font",
                 "type": "font",
                 "inherited_value": {
-                  "font": "theme.global_fonts.secondary.font",
-                  "font_set": "theme.global_fonts.secondary.font_set"
+                  "property_value_paths": {
+                    "color": "theme.global_colors.primary.color",
+                    "fallback": "theme.global_fonts.primary.fallback",
+                    "font": "theme.global_fonts.primary.font",
+                    "font_set": "theme.global_fonts.primary.font_set"
+                  }
                 },
                 "default": {
                   "size": 16,
@@ -1312,7 +1316,7 @@
                   "styles": {
                     "text-decoration": "none"
                   },
-                  "variant": "400"
+                  "variant": "700"
                 }
               },
               {
@@ -1323,7 +1327,30 @@
                 "max": 100,
                 "step": 1,
                 "suffix": "px",
-                "default": 14
+                "default": 0
+              },
+              {
+                "label": "Letter Spacing",
+                "name": "letter_spacing",
+                "type": "number",
+                "display": "text",
+                "max": 100,
+                "step": 1,
+                "suffix": "px",
+                "default": 0
+              },
+              {
+                "label": "Transform",
+                "name": "transform",
+                "type": "choice",
+                "choices": [
+                  ["none", "None"],
+                  ["capitalize", "Capitalize"],
+                  ["uppercase", "Uppercase"],
+                  ["lowercase", "Lowercase"]
+                ],
+                "display": "select",
+                "default": "none"
               },
               {
                 "label": "Color",
