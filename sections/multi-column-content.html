@@ -70,84 +70,8 @@ padding={
           'left': 0
         }
       }%}
-            {% dnd_column
-    offset=0,
-    width=4
-  %}
-    {% dnd_row %}
-      {% dnd_module
-        path='@hubspot/linked_image',
-        img={
-          'alt': context.column_one_image_alt || 'Stock placeholder image with grayscale geometrical mountain landscape',
-          'loading': context.column_one_image_loading || 'lazy',
-          'max_height': context.column_one_image_height || 251,
-          'max_width': context.column_one_image_width || 305,
-          'size_type': 'auto_custom_max',
-          'src': context.column_one_image || get_asset_url('../images/grayscale-mountain.png')
-        }
-      %}
+      {% dnd_module path='../modules/bucket-grid.module' %}
       {% end_dnd_module %}
-    {% end_dnd_row %}
-    {% dnd_row %}
-      {% dnd_module
-        path='@hubspot/rich_text',
-        html={{ context.column_one_content || '<div style="text-align: center;"><h4>Protect wetlands.</h4><p>Wetlands act as natural buffers for coastal areas during rainstorms and hurricanes. They absorb precipitation and storm surge waters. Find out about wetland restoration activities in your area and get involved.</p></div>' }}
-      %}
-      {% end_dnd_module %}
-    {% end_dnd_row %}
-  {% end_dnd_column %}
-  {% dnd_column
-    offset=4,
-    width=4
-  %}
-    {% dnd_row %}
-      {% dnd_module
-        path='@hubspot/linked_image',
-        img={
-          'alt': context.column_two_image_alt || 'Stock placeholder image with grayscale geometrical mountain landscape',
-          'loading': context.column_two_image_loading || 'lazy',
-          'max_height': context.column_two_image_height || 251,
-          'max_width': context.column_two_image_width || 305,
-          'size_type': 'auto_custom_max',
-          'src': context.column_two_image || get_asset_url('../images/grayscale-mountain.png')
-        }
-      %}
-      {% end_dnd_module %}
-    {% end_dnd_row %}
-    {% dnd_row %}
-      {% dnd_module
-        path='@hubspot/rich_text',
-        html={{ context.column_two_content || '<div style="text-align: center;"><h4>Reduce energy use.</h4><p>Reducing your energy usage is good for your wallet and the environment. Turn off your lights and appliances when not in use and replace them with more energy efficient varieties. Adjust your thermostat to reduce AC and heat use.</p></div>' }}
-      %}
-      {% end_dnd_module %}
-    {% end_dnd_row %}
-  {% end_dnd_column %}
-  {% dnd_column
-    offset=8,
-    width=4
-  %}
-    {% dnd_row %}
-      {% dnd_module
-        path='@hubspot/linked_image',
-        img={
-          'alt': context.column_three_image_alt || 'Stock placeholder image with grayscale geometrical mountain landscape',
-          'loading': context.column_three_image_loading || 'lazy',
-          'max_height': context.column_three_image_height || 251,
-          'max_width': context.column_three_image_width || 305,
-          'size_type': 'auto_custom_max',
-          'src': context.column_three_image || get_asset_url('../images/grayscale-mountain.png')
-        }
-      %}
-      {% end_dnd_module %}
-    {% end_dnd_row %}
-    {% dnd_row %}
-      {% dnd_module
-        path='@hubspot/rich_text',
-        html={{ context.column_three_content || '<div style="text-align: center;"><h4>Preserve plants and trees.</h4><p>Plants clean the air every day and soak up rain. Reduce paper use to prevent trees from being cut down. Set all computers and printers to double-sided printing and reuse one-sided copies as scrap paper.</p></div>' }}
-      %}
-      {% end_dnd_module %}
-    {% end_dnd_row %}
-  {% end_dnd_column %}
             {% end_dnd_row %}
         {% end_dnd_column %}
 {% end_dnd_section %}
