@@ -96,7 +96,7 @@
   "expanded" : false,
   "type" : "group",
   "default" : [ {
-    "text" : "$50",
+    "text" : "$10",
     "text_color" : {
       "color" : "#525252",
       "opacity" : 100
