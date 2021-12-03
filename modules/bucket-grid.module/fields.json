@@ -1,0 +1,190 @@
+[ {
+  "id" : "3b35522a-9d7c-25ac-bb19-f726f48538c6",
+  "name" : "bucket",
+  "display_width" : null,
+  "label" : "Bucket",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "999b9cd1-c302-5baf-6128-689a5c7157c7",
+    "name" : "bucket_circle",
+    "display_width" : null,
+    "label" : "Bucket Circle ",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "749528cf-e346-2a24-d075-224edc115837",
+      "name" : "text",
+      "display_width" : null,
+      "label" : "Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "1"
+    }, {
+      "id" : "21f2c2f8-c766-91c9-fa2b-05e333c42217",
+      "name" : "font_size",
+      "display_width" : null,
+      "label" : "Font Size",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "54px"
+    }, {
+      "id" : "0666b39a-fc4d-9bbc-721b-2675b6ece4f4",
+      "name" : "text_color",
+      "display_width" : null,
+      "label" : "Text Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "b32801c8-d8c5-8a11-a5dc-2edd18103cc4",
+      "name" : "background_color",
+      "display_width" : null,
+      "label" : "Background Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#516984",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "3acb3fab-fc52-849d-4691-26f313c673cd",
+      "name" : "border_radius",
+      "display_width" : null,
+      "label" : "Border Radius",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "50%", "Circle" ], [ "0", "Square" ] ],
+      "type" : "choice",
+      "default" : "50%"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "text" : "1",
+      "font_size" : "54px",
+      "text_color" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      },
+      "background_color" : {
+        "color" : "#516984",
+        "opacity" : 100
+      },
+      "border_radius" : "50%"
+    }
+  }, {
+    "id" : "dadb60dd-c3f1-bc81-1feb-25e89a83e8b6",
+    "name" : "bucket_content",
+    "display_width" : null,
+    "label" : "Bucket Content",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "13885e9b-d679-ef7e-63be-51dd2f39dd09",
+      "name" : "bucket_text",
+      "display_width" : null,
+      "label" : "Bucket Text",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<h4 style=\"text-align: center;\">Protect Wetlands</h4>\n<div style=\"text-align: center;\">Wetlands act as natural buffers for coastal areas during rainstorms and hurricanes. They absorb precipitation and storm surge waters. Find out about wetland restoration activities in your area and get involved.</div>"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "bucket_text" : "<h4 style=\"text-align: center;\">Protect Wetlands</h4>\n<div style=\"text-align: center;\">Wetlands act as natural buffers for coastal areas during rainstorms and hurricanes. They absorb precipitation and storm surge waters. Find out about wetland restoration activities in your area and get involved.</div>"
+    }
+
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "bucket_circle" : {
+      "text" : "1",
+      "font_size" : "54px",
+      "text_color" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      },
+      "background_color" : {
+        "color" : "#516984",
+        "opacity" : 100
+      },
+      "border_radius" : "50%",
+      "display_bucket_circle" : true
+    },
+    "bucket_content" : {
+      "bucket_text" : "<h4 style=\"text-align: center;\">Protect Wetlands</h4>\n<div style=\"text-align: center;\">Wetlands act as natural buffers for coastal areas during rainstorms and hurricanes. They absorb precipitation and storm surge waters. Find out about wetland restoration activities in your area and get involved.</div>"
+    }
+  }, {
+    "bucket_circle" : {
+      "text" : "2",
+      "font_size" : "54px",
+      "text_color" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      },
+      "background_color" : {
+        "color" : "#516984",
+        "opacity" : 100
+      },
+      "border_radius" : "50%",
+      "display_bucket_circle" : true
+    },
+    "bucket_content" : {
+      "bucket_text" : "<h4 style=\"text-align: center;\">Reduce Energy Use</h4>\n<div style=\"text-align: center;\">Reducing your energy usage is good for your wallet and the environment. Turn off your lights and appliances when not in use and replace them with more energy efficient varieties. Adjust your thermostat to reduce AC and heat use.</div>"
+    }
+  }, {
+    "bucket_circle" : {
+      "text" : "3",
+      "font_size" : "54px",
+      "text_color" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      },
+      "background_color" : {
+        "color" : "#516984",
+        "opacity" : 100
+      },
+      "border_radius" : "50%",
+      "display_bucket_circle" : true
+    },
+    "bucket_content" : {
+      "bucket_text" : "<h4 style=\"text-align: center;\">Preserve plants and trees.</h4>\n<div style=\"text-align: center;\">Plants clean the air every day and soak up rain. Reduce paper use to prevent trees from being cut down. Set all computers and printers to double-sided printing and reuse one-sided copies as scrap paper.</div>"
+    }
+  } ]
+}, {
+  "id" : "454f638d-b523-1133-58b1-0a99cbcb03ba",
+  "name" : "display_bucket_circles",
+  "display_width" : null,
+  "label" : "Display Bucket Circles",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
+} ]
