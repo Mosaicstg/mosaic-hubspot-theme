@@ -137,6 +137,10 @@
 
 {% set header_bg_color = color(theme.header.background.color) %}
 
+{% set sub_nav_menu = theme.header.menu.drop_downs %}
+{% set sub_nav_menu_background_color = sub_nav_menu.background.color.css %}
+{% set sub_nav_menu_border = theme.header.menu.drop_downs.border.border.css %}
+
 /* 1h. Website footer */
 
 {% set footer_bg_color = color(theme.footer.background.color) %}
@@ -173,6 +177,11 @@ body {
   --body-font-size: {{body_font.size ~ body_font.size_unit}};
   --body-line-height: {{body_line_height}};
   --body-letter-spacing: {{body_letter_spacing}};
+
+  /* Links */
+  --links-font: '{{anchor_font.font}}';
+  --links-font-weight: {{anchor_font.variant}}; 
+  --links-color: {{anchor_font.color}};
 
   /* Headings */
   --h1-color: {{h1_font.color}};
@@ -228,7 +237,6 @@ body {
   --button-line-height: {{button_line_height}};
   --button-letter-spacing: {{button_letter_spacing}};
   --button-background: {{button_bg_color}};
-  --button-border-color: {{button_border_color}};
   --button-border-radius: {{button_corner_radius}};
 
   /* Button Border Width */
@@ -261,6 +269,10 @@ body {
   --header-nav-link-letter-spacing: {{nav_menu_letter_spacing ~ 'px'}};
   --header-nav-link-text-transform: {{nav_menu_text_transform}};
 
+  /* TODO: Connect sub nav settings */
+  --header-sub-nav-background: {{sub_nav_menu_background_color}};
+
+  /* {{theme.header.menu.drop_downs.border.border|pprint}} */
   /* {{theme.buttons.border.border|pprint}} */
 }
 
@@ -286,26 +298,10 @@ body {
 {###########################   3. Typography   #############################}
 {###########################################################################}
 
-/* html {
-  font-size: {{ body_font.size ~ body_font.size_unit }};
-}
-
-body {
-  {{ body_font.style }};
-  color: {{ body_font.color }};
-} */
-
-/* Paragraphs */
-
-p {
-  {{ body_font.style }};
-}
-
 /* Anchors */
 
 a {
   {{ anchor_font.style }};
-  color: {{ anchor_font.color }};
 }
 
 a:hover,
@@ -344,16 +340,16 @@ button:hover,
 button:focus,
 .button:hover,
 .button:focus {
-  {{ button_font.style }};
-  background-color: rgba({{ color_variant(theme.buttons.background.color.color, -40)|convert_rgb }}, {{ theme.buttons.background.color.opacity / 100 }});
-  border-color: {{ color_variant(theme.buttons.border.border.top.color, -40) }};
+  /* {{ button_font.style }}; */
+  /* background-color: rgba({{ color_variant(theme.buttons.background.color.color, -40)|convert_rgb }}, {{ theme.buttons.background.color.opacity / 100 }}); */
+  /* border-color: {{ color_variant(theme.buttons.border.border.top.color, -40) }}; */
 }
 
 button:active,
 .button:active {
-  {{ button_font.style }};
-  background-color: rgba({{ color_variant(theme.buttons.background.color.color, 40)|convert_rgb }}, {{ theme.buttons.background.color.opacity / 100 }});
-  border-color: {{ color_variant(theme.buttons.border_color.color, 40) }};
+  /* {{ button_font.style }}; */
+  /* background-color: rgba({{ color_variant(theme.buttons.background.color.color, 40)|convert_rgb }}, {{ theme.buttons.background.color.opacity / 100 }}); */
+  /* border-color: {{ color_variant(theme.buttons.border_color.color, 40) }}; */
 }
 
 {###########################################################################}
@@ -524,38 +520,36 @@ tfoot td {
 .header__language-switcher-label-current:focus,
 .header__language-switcher .lang_list_class li:hover a,
 .header__language-switcher .lang_list_class li a:focus {
-  color: {{ color_variant(nav_font_color, -40) }};
+  /* color: {{ color_variant(nav_font_color, -40) }}; */
 }
 
 .menu__child-toggle-icon:hover,
 .menu__child-toggle-icon:focus {
-  border-top-color: {{ color_variant(nav_font_color, -40) }};
+  /* border-top-color: {{ color_variant(nav_font_color, -40) }}; */
 }
 
 .menu .menu__link:active,
 .header__language-switcher-label-current:active,
 .header__language-switcher .lang_list_class li a:active {
-  color: {{ color_variant(nav_font_color, 40) }};
+  /* color: {{ color_variant(nav_font_color, 40) }}; */
 }
 
 .menu__child-toggle-icon:active {
-  border-top-color: {{ color_variant(nav_font_color, 40) }};
+  /* border-top-color: {{ color_variant(nav_font_color, 40) }}; */
 }
 
 .menu .menu__item--depth-1 > .menu__link--active-link:after {
-  background-color: {{ nav_font_color }};
+  /* background-color: {{ nav_font_color }}; */
 }
 
 @media (min-width: 767px) {
   .menu .menu__submenu,
   .header__language-switcher .lang_list_class {
     {{ nav_drop_down_border }}
-    background-color: {{ nav_drop_down_bg_color }};
   }
 
   .menu__submenu--level-2 > .menu__item:first-child:before {
     {{ nav_drop_down_border }}
-    background-color: {{ nav_drop_down_bg_color }};
   }
 }
 

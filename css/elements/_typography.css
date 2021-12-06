@@ -22,6 +22,9 @@ p {
 /* Anchors */
 
 a {
+  color: var(--links-color);
+  font-family: var(--links-font), sans-serif;
+  font-weight: var(--links-font-weight);
   cursor: pointer;
 }
 

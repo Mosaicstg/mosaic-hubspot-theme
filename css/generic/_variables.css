@@ -80,6 +80,10 @@
   --body-font-size: 16px;
   --body-line-height: 22px;
 
+  --links-color: var(--theme-secondary);
+  --links-font: var(--font-family);
+  --links-font-weight: 700;
+
   /* Button */
   --button-font-size: 16px;
   --button-font-weight: var(--font-weight-bold);
