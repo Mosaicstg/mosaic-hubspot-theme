@@ -1513,7 +1513,7 @@
             },
             "inherited_value": {
               "property_value_paths": {
-                "color": "theme.global_fonts.primary.color"
+                "color": "theme.global_colors.senary.color"
               }
             }
           }
@@ -1528,8 +1528,13 @@
             "label": "Color",
             "name": "color",
             "type": "color",
+            "inherited_value": {
+              "property_value_paths": {
+                "color": "theme.global_colors.secondary.color"
+              }
+            },
             "default": {
-              "color": "#F8FAFC",
+              "color": "#516984",
               "opacity": 100
             }
           }

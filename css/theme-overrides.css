@@ -143,7 +143,7 @@
 
 /* 1h. Website footer */
 
-{% set footer_bg_color = color(theme.footer.background.color) %}
+{% set footer_bg_color = theme.footer.background.color %}
 {% set footer_font_color = theme.footer.text.color.color %}
 
 {% set button_border_top_width = button_border_obj.top.width.value ~ button_border_obj.top.width.units %}
@@ -272,6 +272,10 @@ body {
   /* TODO: Connect sub nav settings */
   --header-sub-nav-background: {{sub_nav_menu_background_color}};
 
+  /* Footer */
+  --footer-color: {{footer_font_color}};
+  --footer-background: {{footer_bg_color}};
+
   /* {{theme.header.menu.drop_downs.border.border|pprint}} */
   /* {{theme.buttons.border.border|pprint}} */
 }
@@ -327,12 +331,7 @@ blockquote {
 
 button,
 .button {
-  {{ button_border }}
   {{ button_spacing }}
-  {{ button_font.style }};
-  background-color: {{ button_bg_color }};
-  border-radius: {{ button_corner_radius }};
-  color: {{ button_font.color }};
   text-transform: {{ button_text_transform }};
 }
 
@@ -340,16 +339,10 @@ button:hover,
 button:focus,
 .button:hover,
 .button:focus {
-  /* {{ button_font.style }}; */
-  /* background-color: rgba({{ color_variant(theme.buttons.background.color.color, -40)|convert_rgb }}, {{ theme.buttons.background.color.opacity / 100 }}); */
-  /* border-color: {{ color_variant(theme.buttons.border.border.top.color, -40) }}; */
 }
 
 button:active,
 .button:active {
-  /* {{ button_font.style }}; */
-  /* background-color: rgba({{ color_variant(theme.buttons.background.color.color, 40)|convert_rgb }}, {{ theme.buttons.background.color.opacity / 100 }}); */
-  /* border-color: {{ color_variant(theme.buttons.border_color.color, 40) }}; */
 }
 
 {###########################################################################}
@@ -599,26 +592,6 @@ tfoot td {
 {###########################################################################}
 {###########################   8. Website footer   #########################}
 {###########################################################################}
-
-.footer {
-  background-color: {{ footer_bg_color }};
-}
-
-/* Footer content */
-
-.footer p,
-.footer h1,
-.footer h2,
-.footer h3,
-.footer h4,
-.footer h5,
-.footer h6,
-.footer label,
-.footer span,
-.footer li,
-.footer img {
-  color: {{ footer_font_color }};
-}
 
 {###########################################################################}
 {##############################   9. Blog   ################################}

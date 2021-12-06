@@ -10,6 +10,7 @@ button,
   line-height: var(--button-line-height);
   letter-spacing: var(--button-letter-spacing);
   border-radius: var(--button-border-radius);
+  text-transform: var(--buton-text-transform);
 
   /* Border Width */
   border-top-width: var(--border-top-width);

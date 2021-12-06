@@ -1,0 +1,18 @@
+.footer {
+    color: var(--footer-color);
+    background: var(--footer-background-color);
+}
+
+.footer p,
+.footer h1,
+.footer h2,
+.footer h3,
+.footer h4,
+.footer h5,
+.footer h6,
+.footer label,
+.footer span,
+.footer li,
+.footer img {
+    color: var(--footer-color);
+}

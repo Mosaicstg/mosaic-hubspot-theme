@@ -91,6 +91,8 @@
   --button-color: var(--theme-senary);
   --button-background: var(--theme-tertiery);
   --button-border-color: var(--theme-tertiery);
+  --button-letter-spacing: 0;
+  --button-text-transform: none;
 
   --border-top-width: 1px;
   --border-right-width: 1px;
@@ -141,7 +143,7 @@
   --header-sub-nav-link-letter-spacing: var(--header-nav-link-letter-spacing);
 
   /* Footer */
-  --footer-background: var(--theme-tertiery);
+  --footer-background-color: var(--theme-tertiery);
   --footer-color: var(--theme-senary);
   --footer-font-size: 16px;
   --footer-line-height: 22px;
