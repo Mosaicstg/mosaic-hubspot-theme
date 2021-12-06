@@ -232,10 +232,12 @@ body {
   --h6-letter-spacing: {{h6_letter_spacing}};
   --h6-text-transform: {{h6_text_transform}};
 
+  --button-color: {{button_font.color}};
   --button-font-size: {{button_font.size ~ button_font.size_unit}};
   --button-font-weight: {{button_font.variant}};
   --button-line-height: {{button_line_height}};
   --button-letter-spacing: {{button_letter_spacing}};
+  --button-text-transform: {{button_text_transform}};
   --button-background: {{button_bg_color}};
   --button-border-radius: {{button_corner_radius}};
 
