@@ -99,6 +99,11 @@ h6 {
   text-transform: var(--h6-text-transform);
 }
 
+/* Blue Text */
+.blue {
+  color: #88ABC4;
+}
+
 /* Lists */
 
 ul,
