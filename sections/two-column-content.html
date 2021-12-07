@@ -10,7 +10,7 @@
 %}
   {% dnd_module
     path='@hubspot/rich_text',
-    html={{ context.content || '<h3>Sea levels continue to rise, threatening millions of families across the globe.</h3>' }}
+    html={{ context.content || '<h3>Sea levels continue to rise, threatening <span class="blue">millions of families</span> across the globe.</h3>' }}
     offset=0,
     width=6
   %}
