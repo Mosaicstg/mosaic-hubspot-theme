@@ -1,3 +1,6 @@
+.vertical-line-container {
+  height: 200px;
+}
 .vertical-line {
   height: 100px;
   margin: 50px 0 50px -.5px;

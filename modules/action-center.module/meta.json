@@ -2,6 +2,6 @@
   "global" : false,
   "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
   "module_id" : 60977780823,
-  "label" : "Button",
+  "label" : "Action Center",
   "is_available_for_new_content" : true
 }

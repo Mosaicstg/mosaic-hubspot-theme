@@ -26,7 +26,7 @@
     "max_height" : 236
   }, {
     "size_type" : "auto",
-    "src" : "https://f.hubspotusercontent10.net/hubfs/21052062/logo-1.jpg",
+    "src" : "{{ get_asset_url('../images/logo-2.jpg') }}",
     "alt" : "logo-2",
     "loading" : "lazy",
     "width" : 368,
@@ -35,7 +35,7 @@
     "max_height" : 236
   }, {
     "size_type" : "auto",
-    "src" : "https://f.hubspotusercontent10.net/hubfs/21052062/logo-1.jpg",
+    "src" : "{{ get_asset_url('../images/logo-3.jpg') }}",
     "alt" : "logo-3",
     "loading" : "lazy",
     "width" : 368,
@@ -44,7 +44,7 @@
     "max_height" : 236
   }, {
     "size_type" : "auto",
-    "src" : "https://f.hubspotusercontent10.net/hubfs/21052062/logo-1.jpg",
+    "src" : "{{ get_asset_url('../images/logo-4.jpg') }}",
     "alt" : "logo-4",
     "loading" : "lazy",
     "width" : 368,
@@ -53,7 +53,7 @@
     "max_height" : 236
   }, {
     "size_type" : "auto",
-    "src" : "https://f.hubspotusercontent10.net/hubfs/21052062/logo-1.jpg",
+    "src" : "{{ get_asset_url('../images/logo-5.jpg') }}",
     "alt" : "logo-5",
     "loading" : "lazy",
     "width" : 368,
