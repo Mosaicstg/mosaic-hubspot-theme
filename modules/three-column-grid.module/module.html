@@ -1,3 +1,27 @@
+<style>
+  .icon_1 svg {
+    fill: {{ module.column_1.text_color.color }};
+    height: 25px;
+    margin-left: 15px;
+    transform: translateY(4px);
+    font-weight: normal;
+}
+    .icon_2 svg {
+    fill: {{ module.column_2.text_color.color }};
+    height: 25px;
+    margin-left: 15px;
+    transform: translateY(4px);
+    font-weight: normal;
+}
+    .icon_3 svg {
+    fill: {{ module.column_3.text_color.color }};
+    height: 25px;
+    margin-left: 15px;
+    transform: translateY(4px);
+    font-weight: normal;
+}
+</style>
+
 <div class="row">
   
 
@@ -10,7 +34,20 @@
 	{% if module.column_1.link.rel %}rel="{{ module.column_1.link.rel }}"{% endif %}
 	>
 	    <div class="column" style="background-color: {{ module.column_1.background_color.color }};">
-      <h4 style="text-align: center; color: #fff;">{{ module.column_1.text }}</h4>
+        <div>
+                <h4 style="text-align: center; color: {{ module.column_1.text_color.color }};">{{ module.column_1.text }}</h4>
+
+        </div>
+        
+{% if module.column_1.display_icon %}
+   <div class="icon_1">
+         {% icon name="{{ module.column_1.icon_field.name }}" style="{{ module.column_1.icon_field.type }};" unicode="{{ module.column_1.icon_field.unicode }}" icon_set="{{ module.column_1.icon_field.icon_set }}"
+          %} 
+   </div>
+{% endif %}
+
+         
+      
     </div>
 </a>
 
@@ -23,7 +60,17 @@
 	{% if module.column_2.link.rel %}rel="{{ module.column_2.link.rel }}"{% endif %}
 	>
 	    <div class="column" style="background-color: {{ module.column_2.background_color.color }};">
-      <h4 style="text-align: center; color: #fff;">{{ module.column_2.text }}</h4>
+        <div>
+                <h4 style="text-align: center; color: {{ module.column_2.text_color.color }};;">{{ module.column_2.text }}</h4>
+
+        </div>
+                
+{% if module.column_2.display_icon %}
+   <div class="icon_2">
+         {% icon name="{{ module.column_2.icon_field.name }}" style="{{ module.column_2.icon_field.type }};" unicode="{{ module.column_2.icon_field.unicode }}" icon_set="{{ module.column_2.icon_field.icon_set }}"
+          %} 
+   </div>
+{% endif %}
     </div>
 </a>
 
@@ -36,9 +83,19 @@
 	{% if module.column_3.link.rel %}rel="{{ module.column_3.link.rel }}"{% endif %}
 	>
 	    <div class="column" style="background-color: {{ module.column_3.background_color.color }};">
-      <h4 style="text-align: center; color: #fff;">{{ module.column_3.text }}</h4>
+        <div>
+                <h4 style="text-align: center; color: {{ module.column_3.text_color.color }};">{{ module.column_3.text }}</h4>
+
+        </div>
+        {% if module.column_1.display_icon %}
+   <div class="icon_3">
+         {% icon name="{{ module.column_3.icon_field.name }}" style="{{ module.column_3.icon_field.type }};" unicode="{{ module.column_3.icon_field.unicode }}" icon_set="{{ module.column_3.icon_field.icon_set }}"
+          %} 
+   </div>
+{% endif %}
     </div>
 </a>
 
 </div>
+
 

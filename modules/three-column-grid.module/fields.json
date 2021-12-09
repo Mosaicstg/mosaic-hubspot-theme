@@ -1,12 +1,14 @@
 [ {
   "id" : "bca38ac4-13e1-be67-da6e-9fcd1a33264e",
   "name" : "column_1",
+  "display_width" : null,
   "label" : "Column 1",
   "required" : false,
   "locked" : false,
   "children" : [ {
     "id" : "553a2709-fb17-fa4f-b580-3054502a1f98",
     "name" : "text",
+    "display_width" : null,
     "label" : "Text",
     "required" : false,
     "locked" : false,
@@ -14,10 +16,23 @@
     "allow_new_line" : false,
     "show_emoji_picker" : false,
     "type" : "text",
-    "default" : "Make a Donation →"
+    "default" : "Make a Donation"
+  }, {
+    "id" : "92e95414-2807-539c-732f-a8981762a188",
+    "name" : "text_color",
+    "display_width" : null,
+    "label" : "Text Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    }
   }, {
     "id" : "7509c610-0fb2-dd2f-0649-b11d3f9e36df",
     "name" : "link",
+    "display_width" : null,
     "label" : "Link",
     "required" : false,
     "locked" : false,
@@ -34,8 +49,33 @@
       "no_follow" : false
     }
   }, {
+    "id" : "178f03de-8ca5-1bb8-318a-9bd82d572cdb",
+    "name" : "icon_field",
+    "display_width" : null,
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "icon_set" : "fontawesome-5.14.0",
+    "type" : "icon",
+    "default" : {
+      "name" : "Alternate Long Arrow Right",
+      "unicode" : "f30b",
+      "type" : "SOLID"
+    }
+  }, {
+    "id" : "429cf58c-c220-d1c0-6c36-194077ab2ea5",
+    "name" : "display_icon",
+    "display_width" : null,
+    "label" : "Display Icon",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : true
+  }, {
     "id" : "f1d6a7a6-5c83-c36f-0446-685be3b2756c",
     "name" : "background_color",
+    "display_width" : null,
     "label" : "Background Color",
     "required" : false,
     "locked" : false,
@@ -49,7 +89,11 @@
   "expanded" : false,
   "type" : "group",
   "default" : {
-    "text" : "Make a Donation →",
+    "text" : "Make a Donation",
+    "text_color" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    },
     "link" : {
       "url" : {
         "type" : "EXTERNAL",
@@ -59,6 +103,12 @@
       "open_in_new_tab" : false,
       "no_follow" : false
     },
+    "icon_field" : {
+      "name" : "Alternate Long Arrow Right",
+      "unicode" : "f30b",
+      "type" : "SOLID"
+    },
+    "display_icon" : true,
     "background_color" : {
       "color" : "#516984",
       "opacity" : 100
@@ -67,12 +117,14 @@
 }, {
   "id" : "42302deb-2d05-29f6-aea2-b4f36bc5950d",
   "name" : "column_2",
+  "display_width" : null,
   "label" : "Column 2",
   "required" : false,
   "locked" : false,
   "children" : [ {
     "id" : "ade7d665-8480-2ada-36a3-6d3bd977f066",
     "name" : "text",
+    "display_width" : null,
     "label" : "Text",
     "required" : false,
     "locked" : false,
@@ -80,10 +132,23 @@
     "allow_new_line" : false,
     "show_emoji_picker" : false,
     "type" : "text",
-    "default" : "Our Mission →"
+    "default" : "Our Mission"
+  }, {
+    "id" : "ffdf50d5-836e-95e9-7f80-a61c236d27f3",
+    "name" : "text_color",
+    "display_width" : null,
+    "label" : "Text Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    }
   }, {
     "id" : "f96a84bc-6f75-0337-cebc-f63abc3e9eb3",
     "name" : "link",
+    "display_width" : null,
     "label" : "Link",
     "required" : false,
     "locked" : false,
@@ -100,8 +165,33 @@
       "no_follow" : false
     }
   }, {
+    "id" : "bbb6086d-b3e8-f3ca-b085-01e1075244a9",
+    "name" : "icon_field",
+    "display_width" : null,
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "icon_set" : "fontawesome-5.14.0",
+    "type" : "icon",
+    "default" : {
+      "name" : "Alternate Long Arrow Right",
+      "unicode" : "f30b",
+      "type" : "SOLID"
+    }
+  }, {
+    "id" : "a57207ac-3307-f92a-a0fa-2fb0a8103668",
+    "name" : "display_icon",
+    "display_width" : null,
+    "label" : "Display Icon",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : true
+  }, {
     "id" : "6cbd37c1-0ce8-208d-0bf7-2fcfcda53f24",
     "name" : "background_color",
+    "display_width" : null,
     "label" : "Background Color",
     "required" : false,
     "locked" : false,
@@ -115,7 +205,11 @@
   "expanded" : false,
   "type" : "group",
   "default" : {
-    "text" : "Our Mission →",
+    "text" : "Our Mission",
+    "text_color" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    },
     "link" : {
       "url" : {
         "content_id" : null,
@@ -125,6 +219,12 @@
       "open_in_new_tab" : false,
       "no_follow" : false
     },
+    "icon_field" : {
+      "name" : "Alternate Long Arrow Right",
+      "unicode" : "f30b",
+      "type" : "SOLID"
+    },
+    "display_icon" : true,
     "background_color" : {
       "color" : "#88ABC4",
       "opacity" : 100
@@ -133,12 +233,14 @@
 }, {
   "id" : "6abc904b-0d65-03a0-0f5b-d83ba6ca5604",
   "name" : "column_3",
+  "display_width" : null,
   "label" : "Column 3",
   "required" : false,
   "locked" : false,
   "children" : [ {
     "id" : "87b85e58-631e-347b-3521-35f865afd751",
     "name" : "text",
+    "display_width" : null,
     "label" : "Text",
     "required" : false,
     "locked" : false,
@@ -146,10 +248,23 @@
     "allow_new_line" : false,
     "show_emoji_picker" : false,
     "type" : "text",
-    "default" : "Stay Connected →"
+    "default" : "Stay Connected"
+  }, {
+    "id" : "7cf65b8e-2eb0-68ae-0a9b-102629547bf3",
+    "name" : "text_color",
+    "display_width" : null,
+    "label" : "Text Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#516984",
+      "opacity" : 100
+    }
   }, {
     "id" : "fc384e37-4736-40fe-2724-b4e4c122ebe4",
     "name" : "Link",
+    "display_width" : null,
     "label" : "Link",
     "required" : false,
     "locked" : false,
@@ -166,8 +281,23 @@
       "no_follow" : false
     }
   }, {
+    "id" : "f5628a42-40c8-5215-4f6e-3b4605a73143",
+    "name" : "icon_field",
+    "display_width" : null,
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "icon_set" : "fontawesome-5.14.0",
+    "type" : "icon",
+    "default" : {
+      "name" : "Alternate Long Arrow Right",
+      "unicode" : "f30b",
+      "type" : "SOLID"
+    }
+  }, {
     "id" : "7851e9b3-ec29-b213-7a86-ca910f7c9c25",
     "name" : "background_color",
+    "display_width" : null,
     "label" : "Background Color",
     "required" : false,
     "locked" : false,
@@ -181,7 +311,11 @@
   "expanded" : false,
   "type" : "group",
   "default" : {
-    "text" : "Stay Connected →",
+    "text" : "Stay Connected",
+    "text_color" : {
+      "color" : "#516984",
+      "opacity" : 100
+    },
     "Link" : {
       "url" : {
         "content_id" : null,
@@ -191,9 +325,24 @@
       "open_in_new_tab" : false,
       "no_follow" : false
     },
+    "icon_field" : {
+      "name" : "Alternate Long Arrow Right",
+      "unicode" : "f30b",
+      "type" : "SOLID"
+    },
     "background_color" : {
-      "color" : "#516984",
+      "color" : "#EBEBEB",
       "opacity" : 100
     }
   }
+}, {
+  "id" : "d668eef7-6041-094b-1526-1e1a576eb700",
+  "name" : "display_icon",
+  "display_width" : null,
+  "label" : "Display Icon",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
 } ]
