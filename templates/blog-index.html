@@ -16,28 +16,33 @@
   {# Hero banner #}
 
   {% dnd_section
-    background_color='#f8fafc',
-    max_width=600,
-    padding={
-      'default': {
-        'top': 80,
-        'right': 0,
-        'bottom': 80,
-        'left': 0
-      },
-      'mobile': {
-        'top': 80,
-        'right': 20,
-        'bottom': 80,
-        'left': 20
-      }
+  background_image={
+    'backgroundPosition': 'MIDDLE_CENTER',
+    'backgroundSize': 'cover',
+    'imageUrl': context.background_image || get_asset_url('../images/blog-hero-image.jpg')
+  },
+  max_width={{ context.max_width || 1400 }},
+  padding={
+    'default': {
+      'top': 140,
+      'right': 20,
+      'bottom': 160,
+      'left': 20
+    },
+    'mobile': {
+      'top': 80,
+      'right': 20,
+      'bottom': 80,
+      'left': 20
     }
-  %}
+  },
+  vertical_alignment='MIDDLE'
+%}
     {% dnd_column %}
       {% dnd_row %}
         {% dnd_module
           path='@hubspot/rich_text',
-          html='<div style="text-align: center;"><h1>Blog</h1><p>Use this space to tell everyone about what you have to offer.</p></div>'
+          html='<div style="text-align: center;"><h1>News</h1><p>We’re a nonprofit, nonpartisan organization with amazing volunteers nationwide. Our solution to climate change? Democracy. And we need you on our team.</p></div>'
         %}
         {% end_dnd_module %}
       {% end_dnd_row %}
@@ -50,6 +55,7 @@
       {% end_dnd_row %}
     {% end_dnd_column %}
   {% end_dnd_section %}
+
 
   {# Blog listings and pagination #}
 
