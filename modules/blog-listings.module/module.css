@@ -4,8 +4,9 @@
 }
 
 .blog-index {
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .blog-index__post {
@@ -41,6 +42,13 @@
   .blog-index__post-image-wrapper--large {
     flex: 1 1 48%;
   }
+  .blog-index__post-content {
+    display: flex;
+  }
+
+  .blog-listing-left {
+    width: 80%;
+  }
 
   .blog-index__post-content--large {
     flex: 1 1 48%;
@@ -54,7 +62,7 @@
 }
 
 .blog-index__post-title {
-  font-size: 1.25rem;
+  font-size: 32px;
 }
 
 .blog-index__post-timestamp {
