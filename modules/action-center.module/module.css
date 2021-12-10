@@ -19,6 +19,14 @@
   break-after: always; /* New syntax */
 }
 
+@media only screen and (max-width: 1080px) {
+  .button-column {
+    display: inline-block;
+    width: 30%;
+    padding: 40px 0;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .button-row {
     display: block;
