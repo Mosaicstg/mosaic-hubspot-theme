@@ -4,6 +4,18 @@
   margin-right: 15px;
 }
 
+@media (max-width: 767px) {
+  .fab {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+}
+
 a {
   text-decoration: none;
+
+}
+
+a:last-child .fab {
+  margin-right: 0;
 }

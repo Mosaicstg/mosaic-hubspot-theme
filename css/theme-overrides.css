@@ -307,7 +307,7 @@ body {
 /* Anchors */
 
 a {
-  {{ anchor_font.style }};
+  /* {{ anchor_font.style }}; */
 }
 
 a:hover,
