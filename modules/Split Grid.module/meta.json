@@ -1,8 +1,0 @@
-{
-  "global" : false,
-  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
-  "icon" : "../../images/module-icons/cta.svg",
-  "module_id" : 60379018065,
-  "label" : "Split Grid",
-  "is_available_for_new_content" : true
-}
