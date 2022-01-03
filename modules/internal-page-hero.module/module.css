@@ -1,0 +1,25 @@
+.internal-page-hero {
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-content {
+  position: relative;
+  margin: 0 auto;
+}
+
+.hero-content h1 {
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-content {
+    padding: 0 20px;
+  }
+}

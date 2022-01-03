@@ -1,0 +1,182 @@
+[ {
+  "id" : "d42e2e58-5b89-7d70-8d00-a9df5078b39f",
+  "name" : "background_image",
+  "display_width" : null,
+  "label" : "Background Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent10.net/hubfs/21052062/daniel-roe-lpjb_UMOyx8-unsplash%20(1).jpg",
+    "alt" : "daniel-roe-lpjb_UMOyx8-unsplash (1)",
+    "loading" : "lazy",
+    "width" : 1920,
+    "height" : 550,
+    "max_width" : 1920,
+    "max_height" : 550
+  }
+}, {
+  "id" : "868a0c2a-709c-47b3-fa60-7e8dd80b227a",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "40a006af-4066-f683-4ff7-263305c9ad7c",
+    "name" : "background",
+    "display_width" : null,
+    "label" : "Background",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "cdbb9637-b98b-0fb7-5207-0daae76176e7",
+      "name" : "backgroundimage_field",
+      "display_width" : null,
+      "label" : "Background image",
+      "required" : false,
+      "locked" : false,
+      "type" : "backgroundimage",
+      "default" : {
+        "background_position" : "MIDDLE_CENTER",
+        "background_size" : "cover",
+        "src" : "https://f.hubspotusercontent10.net/hubfs/21052062/daniel-roe-lpjb_UMOyx8-unsplash%20(1)-1.jpg"
+      }
+    }, {
+      "id" : "5f3f631f-61c4-95a7-8e83-be64567ca201",
+      "name" : "overlay",
+      "display_width" : null,
+      "label" : "Overlay",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#333333",
+        "opacity" : 35
+      }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "backgroundimage_field" : {
+        "background_position" : "MIDDLE_CENTER",
+        "background_size" : "cover",
+        "src" : "https://f.hubspotusercontent10.net/hubfs/21052062/daniel-roe-lpjb_UMOyx8-unsplash%20(1)-1.jpg"
+      },
+      "overlay" : {
+        "color" : "#000000",
+        "opacity" : 10
+      }
+    }
+  }, {
+    "id" : "af812d57-718a-a25d-7ed1-1e3b9716b593",
+    "name" : "text_color",
+    "display_width" : null,
+    "label" : "Text Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "c5d3f5e1-faee-0c79-21fa-2a704bfebb31",
+    "name" : "padding",
+    "display_width" : null,
+    "label" : "Padding",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : {
+      "padding" : {
+        "top" : {
+          "value" : 150,
+          "units" : "px"
+        },
+        "bottom" : {
+          "value" : 150,
+          "units" : "px"
+        },
+        "left" : {
+          "value" : 0,
+          "units" : "px"
+        },
+        "right" : {
+          "value" : 0,
+          "units" : "px"
+        }
+      }
+    }
+  }, {
+    "id" : "faf2fa68-5e85-e1c9-727a-2bd8612f4fb8",
+    "name" : "max_width",
+    "display_width" : null,
+    "label" : "Max Width",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "min" : 1,
+    "max" : 1200,
+    "step" : 1,
+    "prefix" : "",
+    "suffix" : "px",
+    "type" : "number",
+    "default" : 600
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "background" : {
+      "backgroundimage_field" : {
+        "background_position" : "MIDDLE_CENTER",
+        "background_size" : "cover",
+        "src" : "https://f.hubspotusercontent10.net/hubfs/21052062/daniel-roe-lpjb_UMOyx8-unsplash%20(1)-1.jpg"
+      },
+      "overlay" : {
+        "color" : "#000000",
+        "opacity" : 10
+      }
+    },
+    "text_color" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    },
+    "padding" : {
+      "padding" : {
+        "top" : {
+          "value" : 150,
+          "units" : "px"
+        },
+        "bottom" : {
+          "value" : 150,
+          "units" : "px"
+        },
+        "left" : {
+          "value" : 0,
+          "units" : "px"
+        },
+        "right" : {
+          "value" : 0,
+          "units" : "px"
+        }
+      }
+    },
+    "max_width" : 600
+  }
+}, {
+  "id" : "f2af4fc7-772c-527c-4aff-550ceec6a71c",
+  "name" : "richtext_field",
+  "display_width" : null,
+  "label" : "Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h1 style=\"text-align: center;\">News</h1>\n<div style=\"text-align: center;\">We’re a nonprofit, nonpartisan organization with amazing volunteers nationwide. Our solution to climate change? Democracy. And we need you on our team.</div>"
+} ]
