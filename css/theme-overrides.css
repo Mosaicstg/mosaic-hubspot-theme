@@ -493,10 +493,6 @@ tfoot td {
 {###########################   7. Website header   #########################}
 {###########################################################################}
 
-.header {
-  background-color: {{ header_bg_color }};
-}
-
 .menu__link,
 .header__logo .logo-company-name,
 .header__language-switcher-label-current,
