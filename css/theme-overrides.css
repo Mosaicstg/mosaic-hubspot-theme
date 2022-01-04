@@ -277,9 +277,6 @@ body {
   /* Footer */
   --footer-color: {{footer_font_color}};
   --footer-background: {{footer_bg_color}};
-
-  /* {{theme.header.menu.drop_downs.border.border|pprint}} */
-  /* {{theme.buttons.border.border|pprint}} */
 }
 
 {###########################################################################}
@@ -335,16 +332,6 @@ button,
 .button {
   {{ button_spacing }}
   text-transform: {{ button_text_transform }};
-}
-
-button:hover,
-button:focus,
-.button:hover,
-.button:focus {
-}
-
-button:active,
-.button:active {
 }
 
 {###########################################################################}
@@ -577,10 +564,6 @@ tfoot td {
 }
 
 @media(max-width: 767px) {
-  .header__navigation {
-    background-color: {{ header_bg_color }};
-  }
-
   .header__navigation-toggle svg,
   .menu-arrow svg {
     fill: {{ nav_font_color }};
