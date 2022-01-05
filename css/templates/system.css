@@ -1,7 +1,7 @@
 /* Error pages */
 
 .error-page {
-  background-color: #F5F5F5;
+  background-color: var(--theme-whitesmoke);
   padding: 15rem 0;
   position: relative;
   text-align: center;
@@ -11,7 +11,7 @@
 .error-page h1,
 .error-page h2,
 .error-page h3 {
-  color: #525252;
+  color: var(--theme-primary);
 }
 
 .error-page .error-page-content {
@@ -23,8 +23,8 @@
   margin-top: 100px;
 }
 
-.error-page:before {
-  color: #88ABC4;
+.error-page::before {
+  color: var(--theme-tertiery);
   opacity: .15;
   content: attr(data-error);
   font-size: 40vw;
