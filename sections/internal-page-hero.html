@@ -48,7 +48,9 @@
       'left': 0
     }
     } %}
-      {% dnd_module path='../modules/internal-page-hero.module' %}
+      {% dnd_module path='../modules/internal-page-hero.module' ,
+      richtext_field={{ context.content }}
+      %}
       {% end_dnd_module %}
     {% end_dnd_row %}
   {% end_dnd_column %}
