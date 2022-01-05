@@ -12,9 +12,14 @@
 {% block body %}
 <section class="">
   <div class="systems-page">
-    {% module 'subscriptions_confirmation'
-      path='@hubspot/email_subscriptions_confirmation'
-    %}
+    <div class="systems-page-content">
+      <div class="subscription_confirmation">
+        {% module 'subscriptions_confirmation'
+          path='@hubspot/email_subscriptions_confirmation',
+          subheader_text = "<h3 class='confirmation-subheader_text'>If this is not your email address, please ignore this page since the email associated with this page was most likely forwarded to you.</h3>"
+        %}
+        </div>
+    </div>
   </div>
 </section>
 {% endblock body %}

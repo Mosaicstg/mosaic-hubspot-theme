@@ -12,10 +12,16 @@
 {% block body %}
 <section class="">
   <div class="systems-page">
-    {% module 'backup_unsubscribe'
-      extra_classes='backup-unsubscribe',
-      path='@hubspot/email_simple_subscription'
-    %}
+    <div class="systems-page-content">
+      <div class="unsubscribe_form">
+        {% module 'backup_unsubscribe'
+          extra_classes='backup-unsubscribe',
+          path='@hubspot/email_simple_subscription',
+          input_help_text = "Enter your email address to unsubscribe.",
+          input_placeholder = "Email"
+        %}
+        </div>
+      </div>
   </div>
 </section>
 {% endblock body %}

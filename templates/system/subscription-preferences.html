@@ -12,9 +12,13 @@
 {% block body %}
 <section class="">
   <div class="systems-page">
-    {% module 'subscription_preferences'
-      path='@hubspot/email_subscriptions'
-    %}
+    <div class="systems-page-content subscription-preferences">
+      {% module 'subscription_preferences'
+        path='@hubspot/email_subscriptions'
+        subheader_text = "<h3 class='subscription-subheader_text'>If this is not your email address, please ignore this page since the email associated with this page was most likely forwarded to you.</h3>",
+        unsubscribe_single_text = "<h3 class='subscription-single_text'><b>Uncheck the types of emails you do not want to receive:</b></h3>"
+      %}
+    </div>
   </div>
 </section>
 {% endblock body %}
