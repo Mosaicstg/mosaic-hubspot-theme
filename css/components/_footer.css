@@ -3,7 +3,8 @@
     background: var(--footer-background-color);
 }
 
-.footer .footer__container {
+.footer .footer__container,
+footer .upper-footer__container {
     max-width: 100%;
     padding: 0;
 }

@@ -3,31 +3,85 @@
   label: Website Footer
 -->
 <footer class="footer">
+{% dnd_area 'upper-footer'
+label='Upper Footer',
+class='upper-footer__container content-wrapper'
+%}
+
+{% dnd_section background_color={
+r: 136,
+g: 171,
+b: 196,
+a: 1.0
+}, padding={
+'default': {
+'top': 0,
+'right': 0,
+'bottom': 0,
+'left': 0
+},
+'mobile': {
+'top': 0,
+'right': 0,
+'bottom': 0,
+'left': 0
+}
+} %}
+  {% dnd_column padding={
+  'default': {
+    'top': 0,
+    'right': 0,
+    'bottom': 0,
+    'left': 0
+  },
+  'mobile': {
+    'top': 0,
+    'right': 0,
+    'bottom': 0,
+    'left': 0
+  }
+  } %}
+    {% dnd_row padding={
+    'default': {
+      'top': 0,
+      'right': 0,
+      'bottom': 0,
+      'left': 0
+    },
+    'mobile': {
+      'top': 0,
+      'right': 0,
+      'bottom': 0,
+      'left': 0
+    }
+    }%}
+      {% dnd_column offset=0, width=6 %}
+        {% dnd_row %}
+        {% dnd_module
+        path='@hubspot/rich_text',
+        html='<div style="text-align: left;"><h3>Join the movement.</h3></div>'
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+  {% end_dnd_column %}
+  {% dnd_column offset=6, width=6 %}
+    {% dnd_row %}
+      {% dnd_module path='@hubspot/form' %}
+      {% end_dnd_module %}
+{% end_dnd_row %}
+{% end_dnd_column %}
+    {% end_dnd_row %}
+  {% end_dnd_column %}
+{% end_dnd_section %}
+{% end_dnd_area %}
+
   {% dnd_area 'footer'
     label='Footer',
     class='footer__container content-wrapper'
   %}
 
-  {% dnd_section background_color={
-  r: 136,
-  g: 171,
-  b: 196,
-  a: 1.0
-}, padding={
-'default': {
-  'top': 0,
-  'right': 0,
-  'bottom': 0,
-  'left': 0
-},
-'mobile': {
-  'top': 0,
-  'right': 0,
-  'bottom': 0,
-  'left': 0
-}
-} %}
-    {% dnd_column padding={
+    {# Social follow and copyright #}
+    {% dnd_section padding={
     'default': {
       'top': 0,
       'right': 0,
@@ -41,28 +95,6 @@
       'left': 0
     }
     } %}
-      {% dnd_row %}
-        {% dnd_column offset=0, width=6 %}
-          {% dnd_row %}
-          {% dnd_module
-          path='@hubspot/rich_text',
-          html='<div style="text-align: left;"><h3>Join the movement.</h3></div>'
-        %}
-        {% end_dnd_module %}
-      {% end_dnd_row %}
-    {% end_dnd_column %}
-    {% dnd_column offset=6, width=6 %}
-      {% dnd_row %}
-        {% dnd_module path='@hubspot/form' %}
-        {% end_dnd_module %}
-  {% end_dnd_row %}
-{% end_dnd_column %}
-      {% end_dnd_row %}
-    {% end_dnd_column %}
-  {% end_dnd_section %}
-
-    {# Social follow and copyright #}
-    {% dnd_section %}
       {% dnd_column %}
         {% dnd_row %}
           {% dnd_column
