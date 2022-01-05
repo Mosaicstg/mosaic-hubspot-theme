@@ -6,16 +6,16 @@
          <h5>
             {{ module.tag }}
          </h5>
-         <div class="featured-post-date">   {{ content.publish_date_local_time.strftime('%B') }},
-            {{ content.publish_date_local_time.strftime('%d') }}
-            {{ content.publish_date_local_time.strftime('%Y') }}
+         <div class="featured-post-date">   {{ pop_post.publish_date_local_time.strftime('%B') }},
+            {{ pop_post.publish_date_local_time.strftime('%d') }}
+            {{ pop_post.publish_date_local_time.strftime('%Y') }}
          </div>
          <h3 class="featured-post-title">{{ pop_post.name }}</h3>
          <div class="featured-post-excerpt">
             {{ pop_post.post_list_content|truncatehtml(600) }}
          </div>
          <div class="featured-post-read-more">
-            <a href="{{ content.absolute_url }}">
+            <a href="{{ pop_post.absolute_url }}">
                <p>Read More →</p>
             </a>
          </div>

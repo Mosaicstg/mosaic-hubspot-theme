@@ -1,6 +1,7 @@
 .featured-post {
   display: flex;
   position: relative;
+  padding-bottom: 150px;
 }
 .featured-post-info-container {
   display: inline-block;
@@ -12,9 +13,9 @@
 }
 
 .featured-post-info {
-  padding: 50px;
+  padding: 30px 50px;
   position: absolute;
-  top: 20%;
+  top: 15%;
 }
 
 .featured-post-image {
@@ -24,7 +25,7 @@
 }
 
 .featured-post-image img {
-  height: 715px;
+  height: 650px;
   width: 100%;
   object-fit: cover;
 }
@@ -33,6 +34,7 @@
 @media only screen and (max-width: 768px) {
   .featured-post {
     display: block;
+    padding-bottom: 75px;
   }
   .featured-post-info-container {
     width: 100%;
