@@ -11,7 +11,7 @@
 .error-page h1,
 .error-page h2,
 .error-page h3 {
-  color: var(--theme-primary);
+  color: var(--theme-emperor-gray);
 }
 
 .error-page .error-page-content {
@@ -51,14 +51,28 @@
   padding: 3rem 1.4rem;
 }
 
+.systems-page h1,
+.systems-page h3 {
+  color: var(--theme-emperor-gray);
+} 
+
 .systems-page-content {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 12rem 0;
+  padding: 8rem 0;
+}
+
+.systems-page-content p,
+.systems-page-content h3 {
+  color: var(--theme-emperor-gray);
 }
 
 .systems-page-content .subscription_confirmation {
   text-align: center;
+}
+
+.systems-page-content .subscription_confirmation h2 {
+  color: var(--theme-tertiery);
 }
 
 .systems-page-content.subscription-preferences {
@@ -76,6 +90,7 @@
 }
 
 .systems-page .confirmation-subheader_text {
+  color: var(--theme-emperor-gray);
   max-width: 80%;
   margin: 0 auto;
   text-align: center;
@@ -83,8 +98,8 @@
 
 .systems-page .success {
   background-color: #ffffff;
-  border: 1px solid var(--theme-tertiery);
-  color: var(--theme-tertiery);
+  border: 1px solid var(--theme-secondary);
+  color: var(--theme-secondary);
   font-size: 32px;
   font-weight: bold;
   text-align: center;
@@ -152,6 +167,10 @@
 
 /* Password prompt */
 
+.password-prompt h3 {
+  color: var(--theme-emperor-gray);
+}
+
 .password-prompt input[type=password] {
   height: auto !important;
   margin-bottom: 1.4rem;
@@ -196,6 +215,7 @@
 .backup-unsubscribe h5,
 .backup-unsubscribe h6 {
   text-align: center;
+  color: var(--theme-emperor-gray);
 }
 
 .backup-unsubscribe h3 {
@@ -214,6 +234,41 @@ h2 {
   margin: 30px 0;
 }
 
+.subscription-preferences form label,
+.subscription-preferences form .fakelabel span {
+  font-size: 16px;
+  color: var(--theme-emperor-gray);
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.subscription-preferences form input[type='checkbox'] {
+  appearance: none;
+  background-color: #fff;
+  padding: 5px 10px;
+  border: 1px solid var(--theme-emperor-gray);
+  margin: 0 15px 15px 0;
+
+}
+
+.subscription-preferences .subscribe-options {
+  margin: 40px 0;
+}
+
+.subscription-preferences form input[type='checkbox']::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  background-color: var(--theme-tertiery);
+}
+
+.subscription-preferences form input[type='checkbox']:checked::before {
+  transform: scale(1.5);
+}
+
 #email-prefs-form .item.disabled {
   opacity: 0.6;
   cursor: not-allowed;
@@ -222,7 +277,6 @@ h2 {
 #email-prefs-form .item.disabled input:disabled {
   cursor: not-allowed;
 }
-
 
 /* Membership pages */
 
