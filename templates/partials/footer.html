@@ -4,221 +4,234 @@
 -->
 <footer class="footer">
 {% dnd_area 'upper-footer'
-label='Upper Footer',
-class='upper-footer__container content-wrapper'
+  label='Upper Footer',
+  class='upper-footer__container content-wrapper'
 %}
-
-{% dnd_section background_color={
-r: 136,
-g: 171,
-b: 196,
-a: 1.0
-}, padding={
-'default': {
-'top': 0,
-'right': 0,
-'bottom': 0,
-'left': 0
-},
-'mobile': {
-'top': 0,
-'right': 0,
-'bottom': 0,
-'left': 0
-}
-} %}
-  {% dnd_column padding={
-  'default': {
-    'top': 0,
-    'right': 0,
-    'bottom': 0,
-    'left': 0
-  },
-  'mobile': {
-    'top': 0,
-    'right': 0,
-    'bottom': 0,
-    'left': 0
-  }
-  } %}
-    {% dnd_row padding={
-    'default': {
+  {% dnd_section 
+    background_color={
+      r: 136,
+      g: 171,
+      b: 196,
+      a: 1.0
+    }, 
+    padding={
+      'default': {
       'top': 0,
       'right': 0,
       'bottom': 0,
       'left': 0
-    },
-    'mobile': {
+      },
+      'mobile': {
       'top': 0,
       'right': 0,
       'bottom': 0,
       'left': 0
+      }
     }
-    }%}
-      {% dnd_column offset=0, width=6 %}
-        {% dnd_row %}
-        {% dnd_module
-        path='@hubspot/rich_text',
-        html='<div style="text-align: left;"><h3>Join the movement.</h3></div>'
-      %}
-      {% end_dnd_module %}
-    {% end_dnd_row %}
-  {% end_dnd_column %}
-  {% dnd_column offset=6, width=6 %}
-    {% dnd_row %}
-      {% dnd_module path='@hubspot/form' %}
-      {% end_dnd_module %}
-{% end_dnd_row %}
-{% end_dnd_column %}
-    {% end_dnd_row %}
-  {% end_dnd_column %}
-{% end_dnd_section %}
-{% end_dnd_area %}
-
-  {% dnd_area 'footer'
-    label='Footer',
-    class='footer__container content-wrapper'
   %}
-
-    {# Social follow and copyright #}
-    {% dnd_section padding={
-    'default': {
-      'top': 0,
-      'right': 0,
-      'bottom': 0,
-      'left': 0
-    },
-    'mobile': {
-      'top': 0,
-      'right': 0,
-      'bottom': 0,
-      'left': 0
-    }
-    } %}
-      {% dnd_column %}
-        {% dnd_row %}
-          {% dnd_column
-          offset=0,
-          width=4
-          %}
-          {% dnd_row  padding={
-          'default': {
-            'top': 0,
-            'right': 30,
-            'bottom': 30,
-            'left': 0
-          },
-          'mobile': {
-            'top': 0,
-            'right': 0,
-            'bottom': 30,
-            'left': 0
-          }
-          } %}
-            {% dnd_module
-            path='@hubspot/linked_image',
-            img={
-              'alt': context.image_alt || 'Stock placeholder image with grayscale geometrical mountain landscape',
-              'loading': context.image_loading || 'disabled',
-              'max_height': context.image_height || 56,
-              'max_width': context.image_width || 59.44,
-              'size_type': 'auto_custom_max',
-              'src': context.image || get_asset_url('../../images/mosaic-logo-white.png')
-            }
-          %}
-          {% end_dnd_module %}
-          {% end_dnd_row %}
-          {% dnd_row padding={
-          'default': {
-            'top': 0,
-            'right': 30,
-            'bottom': 30,
-            'left': 0
-          },
-          'mobile': {
-            'top': 0,
-            'right': 0,
-            'bottom': 30,
-            'left': 0
-          }
-          } %}
-          {% dnd_module path='../../modules/social-follow' %}
-            {% module_attribute 'social_link' is_json=True %}
-              [
-                {"social_account": "facebook-f"},
-                {"social_account": "linkedin-in"},
-                {"social_account": "twitter"},
-                {"social_account": "instagram"}
-              ]
-            {% end_module_attribute %}
-          {% end_dnd_module %}
-        {% end_dnd_row %}
-        {% dnd_row padding={
+    {% dnd_column padding={
+      'default': {
+        'top': 0,
+        'right': 0,
+        'bottom': 0,
+        'left': 0
+      },
+      'mobile': {
+        'top': 0,
+        'right': 0,
+        'bottom': 0,
+        'left': 0
+      }
+    }%}
+      {% dnd_row padding={
         'default': {
           'top': 0,
           'right': 0,
-          'bottom': 30,
+          'bottom': 0,
           'left': 0
         },
         'mobile': {
           'top': 0,
           'right': 0,
-          'bottom': 30,
+          'bottom': 0,
           'left': 0
         }
-        } %}
-          {% dnd_module
-          path='@hubspot/rich_text',
-          html='<div style="text-align: left; font-size: 0.7rem;">Website Design by <br><b>Mosaic Strategies Group</b></div>'
-        %}
-        {% end_dnd_module %}
+      }%}
+        {% dnd_column offset=0, width=6 %}
+          {% dnd_row %}
+            {% dnd_module
+              path='@hubspot/rich_text',
+              html='<div style="text-align: left;"><h3>Join the movement.</h3></div>'
+            %}
+            {% end_dnd_module %}
           {% end_dnd_row %}
         {% end_dnd_column %}
-        {% dnd_column
-        offset=4,
-        width=4
-        %}
-      {% dnd_row %}
-        {% dnd_module
-        path='@hubspot/rich_text',
-        html='<div style="text-align: left; font-size: 0.7rem;"><h6>ABOUT</h6><br><p>Every acre we protect and every river mile we restore begins with you. Your support helps us take on the dual threats of climate change and biodiversity loss across 70+ countries and territories.</p><br><a href="#">Read about our values →</a></div>'
-      %}
-      {% end_dnd_module %}
-    {% end_dnd_row %}
-      {% end_dnd_column %}
-      {% dnd_column
-      offset=8,
-      width=4
-      %}
-    {% dnd_row %}
-      {% dnd_module
-      path='@hubspot/rich_text',
-      html='<div style="text-align: left; font-size: 0.7rem;"><span>123 Main Street Suite #123 Brooklyn, NY</span></div>'
-    %}
-    {% end_dnd_module %}
-  {% end_dnd_row %}
-  {% dnd_row %}
-    {% dnd_module
-    path='@hubspot/rich_text',
-    html='<div style="text-align: left; font-size: 0.7rem;"><span>+1 (123) 456-7890</span></div>'
-  %}
-  {% end_dnd_module %}
-{% end_dnd_row %}
-{% dnd_row %}
-  {% dnd_module
-  path='@hubspot/rich_text',
-  html='<div style="text-align: left; font-size: 0.7rem;"><span>support@campaign.com</span></div>'
-%}
-{% end_dnd_module %}
-{% end_dnd_row %}
+        {% dnd_column offset=6, width=6 %}
+          {% dnd_row %}
+            {% dnd_module path='@hubspot/form' %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_row %}
     {% end_dnd_column %}
-        {% end_dnd_row %}
-      {% end_dnd_column %}
-    {% end_dnd_section %}
+  {% end_dnd_section %}
+{% end_dnd_area %}
 
+{% dnd_area 'footer'
+  label='Footer',
+  class='footer__container content-wrapper'
+%}
+  {# Social follow and copyright #}
+  {% dnd_section 
+    padding={
+      'default': {
+        'top': 0,
+        'right': 0,
+        'bottom': 0,
+        'left': 0
+      },
+      'mobile': {
+        'top': 0,
+        'right': 0,
+        'bottom': 0,
+        'left': 0
+      }
+    }
+  %}
+    {% dnd_column %}
+      {% dnd_row %}
 
+        {% dnd_column
+          offset=0,
+          width=4
+        %}
+          {% dnd_row 
+            padding={
+              'default': {
+                'top': 0,
+                'right': 30,
+                'bottom': 30,
+                'left': 0
+              },
+              'mobile': {
+                'top': 0,
+                'right': 0,
+                'bottom': 30,
+                'left': 0
+              }
+            } 
+          %}
+            {% dnd_module
+              path='@hubspot/linked_image',
+              img={
+                'alt': context.image_alt || 'Stock placeholder image with grayscale geometrical mountain landscape',
+                'loading': context.image_loading || 'disabled',
+                'max_height': context.image_height || 56,
+                'max_width': context.image_width || 59.44,
+                'size_type': 'auto_custom_max',
+                'src': context.image || get_asset_url('../../images/mosaic-logo-white.png')
+              }
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
 
-  {% end_dnd_area %}
+          {% dnd_row 
+            padding={
+              'default': {
+                'top': 0,
+                'right': 30,
+                'bottom': 30,
+                'left': 0
+              },
+              'mobile': {
+                'top': 0,
+                'right': 0,
+                'bottom': 30,
+                'left': 0
+              }
+            }
+          %}
+            {% dnd_module path='../../modules/social-follow' %}
+              {% module_attribute 'social_link' is_json=True %}
+                [
+                  {"social_account": "facebook-f"},
+                  {"social_account": "linkedin-in"},
+                  {"social_account": "twitter"},
+                  {"social_account": "instagram"}
+                ]
+              {% end_module_attribute %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+          {% dnd_row 
+            padding={
+              'default': {
+                'top': 0,
+                'right': 0,
+                'bottom': 30,
+                'left': 0
+              },
+              'mobile': {
+                'top': 0,
+                'right': 0,
+                'bottom': 30,
+                'left': 0
+              }
+            } 
+          %}
+            {% dnd_module
+              path='@hubspot/rich_text',
+              html='<div style="text-align: left; font-size: 0.7rem;">Website Design by <br><b>Mosaic Strategies Group</b></div>'
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+
+        {% dnd_column
+          offset=4,
+          width=4
+        %}
+          {% dnd_row %}
+            {% dnd_module
+              path='@hubspot/rich_text',
+              html='<div style="text-align: left; font-size: 0.7rem;"><h6>ABOUT</h6><br><p>Every acre we protect and every river mile we restore begins with you. Your support helps us take on the dual threats of climate change and biodiversity loss across 70+ countries and territories.</p><br><a href="#">Read about our values →</a></div>'
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+
+        {% dnd_column
+          offset=8,
+          width=4
+        %}
+          {% dnd_row %}
+            {% dnd_module
+              path='@hubspot/rich_text',
+              html='<div style="text-align: left; font-size: 0.7rem;"><span>123 Main Street Suite #123 Brooklyn, NY</span></div>'
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+
+          {% dnd_row %}
+            {% dnd_module
+              path='@hubspot/rich_text',
+              html='<div style="text-align: left; font-size: 0.7rem;"><span>+1 (123) 456-7890</span></div>'
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+
+          {% dnd_row %}
+            {% dnd_module
+              path='@hubspot/rich_text',
+              html='<div style="text-align: left; font-size: 0.7rem;"><span>support@campaign.com</span></div>'
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+
+      {% end_dnd_row %}
+    {% end_dnd_column %}
+  {% end_dnd_section %}
+{% end_dnd_area %}
 </footer>
 
 
