@@ -22,3 +22,46 @@ footer .upper-footer__container {
 .footer img {
     color: var(--footer-color);
 }
+
+.footer .fas {
+    float: left;
+    margin-right: 20px;
+}
+
+.upper-footer__container form input[type=email] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--theme-senary);
+    ;
+}
+
+.upper-footer__container form input[type=email]::placeholder {
+    color: var(--footer-color);
+} 
+
+.upper-footer__container form input[type=submit] {
+    background-color: var(--theme-senary);
+    color: var(--footer-background-color);
+    padding: 10px 20px;
+}
+
+.upper-footer__container form .hs-form-field {
+    display: inline-block;
+    width: 60%;
+}
+
+.upper-footer__container form .hs_submit {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .upper-footer__container form .hs-form-field {
+        display: block;
+        width: 100%;
+    }
+    .upper-footer__container form .hs_submit {
+        display: block;
+        margin-left: 0;
+    }
+}
