@@ -1351,21 +1351,6 @@
                 ],
                 "display": "select",
                 "default": "none"
-              },
-              {
-                "label": "Color",
-                "name": "color",
-                "type": "color",
-                "visibility": {
-                  "hidden_subfields": {
-                    "opacity": true
-                  }
-                },
-                "inherited_value": {
-                  "property_value_paths": {
-                    "color": "theme.global_fonts.primary.color"
-                  }
-                }
               }
             ]
           },

@@ -126,11 +126,11 @@
 
 /* 1g. Website header */
 
-{% set nav_font_color = theme.header.menu.text.color.color %}
+{% set nav_menu_font = theme.header.menu.text.font %}
+{% set nav_font_color = nav_menu_font.color%}
 {% set nav_drop_down_font_color = theme.header.menu.drop_downs.text.color.color %}
 {% set nav_drop_down_bg_color = color(theme.header.menu.drop_downs.background.color) %}
 {% set nav_drop_down_border = theme.header.menu.drop_downs.border.border.css %}
-{% set nav_menu_font = theme.header.menu.text.font %}
 {% set nav_menu_line_height = theme.header.menu.text.line_height %}
 {% set nav_menu_letter_spacing = theme.header.menu.text.letter_spacing %}
 {% set nav_menu_text_transform = theme.header.menu.text.transform %}
@@ -263,7 +263,7 @@ body {
   --header-color: {{nav_font_color}};
   --header-background: {{header_bg_color}};
 
-  --header-nav-link-color: {{nav_menu_font.color}};
+  --header-nav-link-color: {{nav_font_color}};
   --header-nav-link-font: '{{nav_menu_font.font}}', sans-serif;
   --header-nav-link-font-size: {{nav_menu_font.size ~ nav_menu_font.size_unit}};
   --header-nav-link-font-weight: {{nav_menu_font.variant}};
