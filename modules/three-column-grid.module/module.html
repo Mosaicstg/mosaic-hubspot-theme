@@ -74,8 +74,8 @@
     </div>
 </a>
 
-{% set href = module.column_1.link.url.href %}
-{% if module.column_1.link.url.type is equalto "EMAIL_ADDRESS" %}
+{% set href = module.column_3.link.url.href %}
+{% if module.column_3.link.url.type is equalto "EMAIL_ADDRESS" %}
 	{% set href = "mailto:" + href %}
 {% endif %}
 <a href="{{ href }}"
@@ -87,7 +87,7 @@
                 <h4 style="text-align: center; color: {{ module.column_3.text_color.color }};">{{ module.column_3.text }}</h4>
 
         </div>
-        {% if module.column_1.display_icon %}
+        {% if module.column_3.display_icon %}
    <div class="icon_3">
          {% icon name="{{ module.column_3.icon_field.name }}" style="{{ module.column_3.icon_field.type }};" unicode="{{ module.column_3.icon_field.unicode }}" icon_set="{{ module.column_3.icon_field.icon_set }}"
           %} 

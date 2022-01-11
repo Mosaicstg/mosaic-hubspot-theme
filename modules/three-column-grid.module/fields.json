@@ -294,6 +294,17 @@
       "unicode" : "f30b",
       "type" : "SOLID"
     }
+  },
+  {
+    "id" : "d668eef7-6041-094b-1526-1e1a576eb700",
+    "name" : "display_icon",
+    "display_width" : null,
+    "label" : "Display Icon",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : true
   }, {
     "id" : "7851e9b3-ec29-b213-7a86-ca910f7c9c25",
     "name" : "background_color",
@@ -335,14 +346,4 @@
       "opacity" : 100
     }
   }
-}, {
-  "id" : "d668eef7-6041-094b-1526-1e1a576eb700",
-  "name" : "display_icon",
-  "display_width" : null,
-  "label" : "Display Icon",
-  "required" : false,
-  "locked" : false,
-  "display" : "checkbox",
-  "type" : "boolean",
-  "default" : true
 } ]
