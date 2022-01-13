@@ -12,37 +12,33 @@
 {% block body %}
 <section>
   <div class="error-page" data-error="404">
-  <div class="error-page-content">
-  <div class="page-not-found">
-    {% module 'content'
-      path='@hubspot/rich_text',
-      html='<h1>Page not found</h1>'
-    %}
+    <div class="error-page-content">
+      <div class="page-not-found">
+        {% module 'content'
+          path='@hubspot/rich_text',
+          html='<h1>Page not found</h1>'
+        %}
+      </div>
+      <div class="error-message">
+        {% module 'content'
+          path='@hubspot/rich_text',
+          html='<h3>The page you’re looking for doesn’t exist or another error occurred.</h3>'
+        %}
+      </div>
+      {% module 'button'
+        path='../../modules/button',
+        button_text='Back to homepage →'
+        link={
+          'url':
+            {
+              'type': 'EXTERNAL',
+              'href': '/'
+            },
+            'open_in_new_tab': false,
+            'no_follow': false
+        }
+      %}
     </div>
-    <div class="error-message">
-
-    {% module 'content'
-      path='@hubspot/rich_text',
-      html='<h3>The page you’re looking for doesn’t exist or another error occurred.</h3>'
-    %}
-    </div>
-    
-
-    {% module 'button'
-      path='../../modules/button',
-      button_text='Back to homepage →'
-      link={
-        'url':
-          {
-            'type': 'EXTERNAL',
-            'href': '/'
-          },
-          'open_in_new_tab': false,
-          'no_follow': false
-      }
-    %}
-    </div>
-  </div>
   </div>
 </section>
 {% endblock body %}

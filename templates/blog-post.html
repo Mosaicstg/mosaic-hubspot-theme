@@ -9,28 +9,22 @@
 
 {% block body %}
 <div class="body-container body-container--blog-post">
-  
   {# Hero banner #}
   {% module "module_164028865747914" path="/Hackathon/modules/internal-page-hero" %}
-
   {# Blog post #}
-
   <div class="content-wrapper">
     <article class="blog-post">
-
       {# Featured image #}
-
-
-    {% if content.featured_image %}
+      {% if content.featured_image %}
         <img src="{{ content.featured_image }}">
-    {% endif %}
-        <div class="blog-post__meta">
-    <time datetime="{{ content.publish_date }}" class="blog-post__timestamp">
-    {{ content.publish_date_local_time.strftime('%B') }},
-    {{ content.publish_date_local_time.strftime('%d') }}
-    {{ content.publish_date_local_time.strftime('%Y') }}
-    </time>
-  </div>
+      {% endif %}
+      <div class="blog-post__meta">
+        <time datetime="{{ content.publish_date }}" class="blog-post__timestamp">
+        {{ content.publish_date_local_time.strftime('%B') }},
+        {{ content.publish_date_local_time.strftime('%d') }}
+        {{ content.publish_date_local_time.strftime('%Y') }}
+        </time>
+      </div>
       <h3>{{ content.name }}</h3>
       <div class="blog-post__body">
         {{ content.post_body }}

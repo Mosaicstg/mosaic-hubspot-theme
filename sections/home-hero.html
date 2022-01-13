@@ -11,7 +11,7 @@
     'backgroundSize': 'cover',
     'imageUrl': context.background_image || get_asset_url('../images/michael-durana-sYegwYtIqJg-unsplash.jpg')
   },
-  max_width={{ context.max_width || 1400 }},
+  max_width={{ context.max_width }},
   padding={
     'default': {
       'top': 140,
@@ -29,8 +29,7 @@
   vertical_alignment='MIDDLE'
 %}
   {% dnd_column %}
-    {% dnd_row
-  %}
+    {% dnd_row %}
       {% dnd_module
         path='@hubspot/rich_text',
         html={{ context.content || '<div style="text-align: left; max-width: 900px;"><h1 style="color: #fff;">We protect and advocate for families affected by rising sea levels.</h1><a href="#" style="color: #fff;">Read about our values →</a></div>' }}

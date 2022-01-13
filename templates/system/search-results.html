@@ -21,9 +21,9 @@
           <h1>Search Results for "<span class="search-keyword">{{ request.query_dict.term|escape }}</span>"</h1>
         {% end_module_attribute %}
       {% end_module_block %}
-        {% module 'search_results'
-          path='@hubspot/search_results'
-        %}
+      {% module 'search_results'
+        path='@hubspot/search_results'
+      %}
       </div>
   </div>
 </section>

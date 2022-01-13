@@ -14,29 +14,29 @@
 %}
 
   {# Hero banner #}
-  {% include_dnd_partial path='../sections/internal-page-hero.html'  
-  
-  context={
-  'content': '<h1 style="text-align: center;">News</h1><p style="text-align: center;">We’re a nonprofit, nonpartisan organization with amazing volunteers nationwide. Our solution to climate change? Democracy. And we need you on our team.</p>',
-
-}%}
-
+  {% include_dnd_partial 
+    path='../sections/internal-page-hero.html'  
+    context={
+    'content': '<h1 style="text-align: center;">News</h1><p style="text-align: center;">We’re a nonprofit, nonpartisan organization with amazing volunteers nationwide. Our solution to climate change? Democracy. And we need you on our team.</p>',
+    }
+  %}
 
   {# Blog listings and pagination #}
-  {% dnd_section background_color={
-  r: 245,
-  g: 245,
-  b: 245,
-  a: 1.0
-},
-padding={
+  {% dnd_section 
+    background_color={
+      r: 245,
+      g: 245,
+      b: 245,
+      a: 1.0
+    },
+    padding={
       'mobile': {
         'top': 10,
         'right': 10,
         'bottom': 10,
         'left': 10
       }
-      }
+    }
     vertical_alignment='TOP'
   %}
     {% dnd_column %}

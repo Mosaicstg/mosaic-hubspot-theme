@@ -5,36 +5,9 @@
   screenshotPath: ../images/section-previews/internal-page-hero.png
   description: "Full-width background image with rich text."
 -->
-{% dnd_section  class='call-to-action' padding={
-'default': {
-  'top': 0,
-  'right': 0,
-  'bottom': 0,
-  'left': 0
-},
-'mobile': {
-  'top': 0,
-  'right': 0,
-  'bottom': 0,
-  'left': 0
-}
-} 
-%}
-  {% dnd_column padding={
-  'default': {
-    'top': 0,
-    'right': 0,
-    'bottom': 0,
-    'left': 0
-  },
-  'mobile': {
-    'top': 0,
-    'right': 0,
-    'bottom': 0,
-    'left': 0
-  }
-  } %}
-    {% dnd_row  padding={
+{% dnd_section  
+  class='call-to-action' 
+  padding={
     'default': {
       'top': 0,
       'right': 0,
@@ -47,9 +20,43 @@
       'bottom': 0,
       'left': 0
     }
-    } %}
-      {% dnd_module path='../modules/internal-page-hero.module' ,
-      richtext_field={{ context.content }}
+  } 
+%}
+  {% dnd_column 
+    padding={
+      'default': {
+        'top': 0,
+        'right': 0,
+        'bottom': 0,
+        'left': 0
+      },
+      'mobile': {
+        'top': 0,
+        'right': 0,
+        'bottom': 0,
+        'left': 0
+      }
+    } 
+  %}
+    {% dnd_row  
+      padding={
+        'default': {
+          'top': 0,
+          'right': 0,
+          'bottom': 0,
+          'left': 0
+        },
+        'mobile': {
+          'top': 0,
+          'right': 0,
+          'bottom': 0,
+          'left': 0
+        }
+      } 
+    %}
+      {% dnd_module 
+        path='../modules/internal-page-hero.module' ,
+        richtext_field={{ context.content }}
       %}
       {% end_dnd_module %}
     {% end_dnd_row %}
