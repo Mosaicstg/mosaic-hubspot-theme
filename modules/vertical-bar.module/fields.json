@@ -1,13 +1,15 @@
-[ {
-  "id" : "310bf487-709a-f49a-9c92-0a9604bef1c8",
-  "name" : "bar_color",
-  "display_width" : null,
-  "label" : "Bar Color",
-  "required" : false,
-  "locked" : false,
-  "type" : "color",
-  "default" : {
-    "color" : "#88ABC4",
-    "opacity" : 100
+[
+  {
+    "id": "310bf487-709a-f49a-9c92-0a9604bef1c8",
+    "name": "bar_color",
+    "display_width": null,
+    "label": "Bar Color",
+    "required": false,
+    "locked": false,
+    "type": "color",
+    "default": {
+      "color": "#88ABC4",
+      "opacity": 100
+    }
   }
-} ]
+]

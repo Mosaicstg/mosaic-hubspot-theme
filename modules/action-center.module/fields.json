@@ -1,214 +1,234 @@
-[ {
-  "id" : "dea8e69b-73b9-35c6-3319-cb0601ed1395",
-  "name" : "button_row_background_color",
-  "display_width" : null,
-  "label" : "Button Row Background Color",
-  "required" : false,
-  "locked" : false,
-  "type" : "color",
-  "default" : {
-    "color" : "#ffffff",
-    "opacity" : 100
-  }
-},
+[
   {
-  "id" : "ebf125f2-43e8-1471-6585-ea2ba37a0ee0",
-  "name" : "button",
-  "display_width" : null,
-  "label" : "Buttons",
-  "required" : false,
-  "locked" : false,
-  "occurrence" : {
-    "min" : 1,
-    "max" : null,
-    "sorting_label_field" : null,
-    "default" : 5
+    "id": "dea8e69b-73b9-35c6-3319-cb0601ed1395",
+    "name": "button_row_background_color",
+    "display_width": null,
+    "label": "Button Row Background Color",
+    "required": false,
+    "locked": false,
+    "type": "color",
+    "default": {
+      "color": "#ffffff",
+      "opacity": 100
+    }
   },
-  "children" : [ {
-    "id" : "771ce342-8e4f-ca03-54a1-ef2cdeb3ae8c",
-    "name" : "text",
-    "display_width" : null,
-    "label" : "Text",
-    "required" : false,
-    "locked" : false,
-    "validation_regex" : "",
-    "allow_new_line" : false,
-    "show_emoji_picker" : false,
-    "type" : "text",
-    "default" : "$10"
-  }, {
-    "id" : "5ac3c388-a2f2-6e61-1d9d-6d25b89326c4",
-    "name" : "text_color",
-    "display_width" : null,
-    "label" : "Text Color",
-    "required" : false,
-    "locked" : false,
-    "type" : "color",
-    "default" : {
-      "color" : "#525252",
-      "opacity" : 100
-    }
-  }, {
-    "id" : "1b651e5d-a461-4498-6038-643d596fa439",
-    "name" : "link",
-    "display_width" : null,
-    "label" : "Link",
-    "required" : false,
-    "locked" : false,
-    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
-    "show_advanced_rel_options" : false,
-    "type" : "link",
-    "default" : {
-      "url" : {
-        "type" : "EXTERNAL",
-        "href" : "https://google.com",
-        "content_id" : null
+  {
+    "id": "ebf125f2-43e8-1471-6585-ea2ba37a0ee0",
+    "name": "button",
+    "display_width": null,
+    "label": "Buttons",
+    "required": false,
+    "locked": false,
+    "occurrence": {
+      "min": 1,
+      "max": null,
+      "sorting_label_field": null,
+      "default": 5
+    },
+    "children": [
+      {
+        "id": "771ce342-8e4f-ca03-54a1-ef2cdeb3ae8c",
+        "name": "text",
+        "display_width": null,
+        "label": "Text",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "default": "$10"
       },
-      "open_in_new_tab" : false,
-      "no_follow" : false
-    }
-  }, {
-    "id" : "4992b16d-a191-afc3-59e5-31ba160eab4e",
-    "name" : "background_color",
-    "display_width" : null,
-    "label" : "Background Color",
-    "required" : false,
-    "locked" : false,
-    "type" : "color",
-    "default" : {
-      "color" : "#ffffff",
-      "opacity" : 100
-    }
-  }, {
-    "id" : "cea436eb-d18b-e4ae-dbc7-abf1421a556c",
-    "name" : "border_color",
-    "display_width" : null,
-    "label" : "Border Color",
-    "required" : false,
-    "locked" : false,
-    "type" : "color",
-    "default" : {
-      "color" : "#D6D6D6",
-      "opacity" : 100
-    }
-  } ],
-  "tab" : "CONTENT",
-  "expanded" : false,
-  "type" : "group",
-  "default" : [ {
-    "text" : "$10",
-    "text_color" : {
-      "color" : "#525252",
-      "opacity" : 100
-    },
-    "link" : {
-      "url" : {
-        "type" : "EXTERNAL",
-        "href" : "https://google.com",
-        "content_id" : null
+      {
+        "id": "5ac3c388-a2f2-6e61-1d9d-6d25b89326c4",
+        "name": "text_color",
+        "display_width": null,
+        "label": "Text Color",
+        "required": false,
+        "locked": false,
+        "type": "color",
+        "default": {
+          "color": "#525252",
+          "opacity": 100
+        }
       },
-      "open_in_new_tab" : false,
-      "no_follow" : false
-    },
-    "background_color" : {
-      "color" : "#ffffff",
-      "opacity" : 100
-    },
-    "border_color" : {
-      "color" : "#D6D6D6",
-      "opacity" : 100
-    }
-  }, {
-    "text" : "$50",
-    "text_color" : {
-      "color" : "#525252",
-      "opacity" : 100
-    },
-    "link" : {
-      "url" : {
-        "type" : "EXTERNAL",
-        "href" : "https://google.com",
-        "content_id" : null
+      {
+        "id": "1b651e5d-a461-4498-6038-643d596fa439",
+        "name": "link",
+        "display_width": null,
+        "label": "Link",
+        "required": false,
+        "locked": false,
+        "supported_types": [
+          "EXTERNAL",
+          "CONTENT",
+          "FILE",
+          "EMAIL_ADDRESS",
+          "BLOG"
+        ],
+        "show_advanced_rel_options": false,
+        "type": "link",
+        "default": {
+          "url": {
+            "type": "EXTERNAL",
+            "href": "https://google.com",
+            "content_id": null
+          },
+          "open_in_new_tab": false,
+          "no_follow": false
+        }
       },
-      "open_in_new_tab" : false,
-      "no_follow" : false
-    },
-    "background_color" : {
-      "color" : "#ffffff",
-      "opacity" : 100
-    },
-    "border_color" : {
-      "color" : "#D6D6D6",
-      "opacity" : 100
-    }
-  }, {
-    "text" : "$100",
-    "text_color" : {
-      "color" : "#525252",
-      "opacity" : 100
-    },
-    "link" : {
-      "url" : {
-        "type" : "EXTERNAL",
-        "href" : "https://google.com",
-        "content_id" : null
+      {
+        "id": "4992b16d-a191-afc3-59e5-31ba160eab4e",
+        "name": "background_color",
+        "display_width": null,
+        "label": "Background Color",
+        "required": false,
+        "locked": false,
+        "type": "color",
+        "default": {
+          "color": "#ffffff",
+          "opacity": 100
+        }
       },
-      "open_in_new_tab" : false,
-      "no_follow" : false
-    },
-    "background_color" : {
-      "color" : "#ffffff",
-      "opacity" : 100
-    },
-    "border_color" : {
-      "color" : "#D6D6D6",
-      "opacity" : 100
-    }
-  }, {
-    "text" : "$500",
-    "text_color" : {
-      "color" : "#525252",
-      "opacity" : 100
-    },
-    "link" : {
-      "url" : {
-        "type" : "EXTERNAL",
-        "href" : "https://google.com",
-        "content_id" : null
+      {
+        "id": "cea436eb-d18b-e4ae-dbc7-abf1421a556c",
+        "name": "border_color",
+        "display_width": null,
+        "label": "Border Color",
+        "required": false,
+        "locked": false,
+        "type": "color",
+        "default": {
+          "color": "#D6D6D6",
+          "opacity": 100
+        }
+      }
+    ],
+    "tab": "CONTENT",
+    "expanded": false,
+    "type": "group",
+    "default": [
+      {
+        "text": "$10",
+        "text_color": {
+          "color": "#525252",
+          "opacity": 100
+        },
+        "link": {
+          "url": {
+            "type": "EXTERNAL",
+            "href": "https://google.com",
+            "content_id": null
+          },
+          "open_in_new_tab": false,
+          "no_follow": false
+        },
+        "background_color": {
+          "color": "#ffffff",
+          "opacity": 100
+        },
+        "border_color": {
+          "color": "#D6D6D6",
+          "opacity": 100
+        }
       },
-      "open_in_new_tab" : false,
-      "no_follow" : false
-    },
-    "background_color" : {
-      "color" : "#ffffff",
-      "opacity" : 100
-    },
-    "border_color" : {
-      "color" : "#D6D6D6",
-      "opacity" : 100
-    }
-  }, {
-    "text" : "Donate",
-    "text_color" : {
-      "color" : "#ffffff",
-      "opacity" : 100
-    },
-    "link" : {
-      "url" : {
-        "type" : "EXTERNAL",
-        "href" : "https://google.com",
-        "content_id" : null
+      {
+        "text": "$50",
+        "text_color": {
+          "color": "#525252",
+          "opacity": 100
+        },
+        "link": {
+          "url": {
+            "type": "EXTERNAL",
+            "href": "https://google.com",
+            "content_id": null
+          },
+          "open_in_new_tab": false,
+          "no_follow": false
+        },
+        "background_color": {
+          "color": "#ffffff",
+          "opacity": 100
+        },
+        "border_color": {
+          "color": "#D6D6D6",
+          "opacity": 100
+        }
       },
-      "open_in_new_tab" : false,
-      "no_follow" : false
-    },
-    "background_color" : {
-      "color" : "#516984",
-      "opacity" : 100
-    },
-    "border_color" : {
-      "color" : "#516984",
-      "opacity" : 100
-    }
-  } ]
-} ]
+      {
+        "text": "$100",
+        "text_color": {
+          "color": "#525252",
+          "opacity": 100
+        },
+        "link": {
+          "url": {
+            "type": "EXTERNAL",
+            "href": "https://google.com",
+            "content_id": null
+          },
+          "open_in_new_tab": false,
+          "no_follow": false
+        },
+        "background_color": {
+          "color": "#ffffff",
+          "opacity": 100
+        },
+        "border_color": {
+          "color": "#D6D6D6",
+          "opacity": 100
+        }
+      },
+      {
+        "text": "$500",
+        "text_color": {
+          "color": "#525252",
+          "opacity": 100
+        },
+        "link": {
+          "url": {
+            "type": "EXTERNAL",
+            "href": "https://google.com",
+            "content_id": null
+          },
+          "open_in_new_tab": false,
+          "no_follow": false
+        },
+        "background_color": {
+          "color": "#ffffff",
+          "opacity": 100
+        },
+        "border_color": {
+          "color": "#D6D6D6",
+          "opacity": 100
+        }
+      },
+      {
+        "text": "Donate",
+        "text_color": {
+          "color": "#ffffff",
+          "opacity": 100
+        },
+        "link": {
+          "url": {
+            "type": "EXTERNAL",
+            "href": "https://google.com",
+            "content_id": null
+          },
+          "open_in_new_tab": false,
+          "no_follow": false
+        },
+        "background_color": {
+          "color": "#516984",
+          "opacity": 100
+        },
+        "border_color": {
+          "color": "#516984",
+          "opacity": 100
+        }
+      }
+    ]
+  }
+]
