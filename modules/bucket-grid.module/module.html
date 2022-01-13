@@ -1,26 +1,25 @@
 {% if module.display_bucket_circles %}
-	<!-- HTML to show when checked -->
-<div class="bucket-grid-row">
-  {% for item in module.bucket %}
-  <div class="bucket-grid-column">
-    <div class="bucket-circle">
+  <!-- HTML to show when checked -->
+  <div class="bucket-grid-row">
+    {% for item in module.bucket %}
+      <div class="bucket-grid-column">
+        <div class="bucket-circle">
           <h2 style="color: {{ item.bucket_circle.text_color.color }}; font-size: {{ item.bucket_circle.font_size }}; background-color: {{ item.bucket_circle.background_color.color }}; border-radius: {{ item.bucket_circle.border_radius }}"> {{ item.bucket_circle.text }} </h2>
-    </div>
-  <div class="bucket-content">
-        {{ item.bucket_content.bucket_text }}    
-    </div>
+        </div>
+        <div class="bucket-content">
+          {{ item.bucket_content.bucket_text }}    
+        </div>
+      </div>
+    {% endfor %}
   </div>
-  {% endfor %}
-</div>
-
 {% else %}
-<div class="bucket-grid-row">
-  {% for item in module.bucket %}
-  <div class="bucket-grid-column">
-  <div class="bucket-content">
-        {{ item.bucket_content.bucket_text }}    
-    </div>
+  <div class="bucket-grid-row">
+    {% for item in module.bucket %}
+      <div class="bucket-grid-column">
+        <div class="bucket-content">
+          {{ item.bucket_content.bucket_text }}    
+        </div>
+      </div>
+    {% endfor %}
   </div>
-  {% endfor %}
-</div>
 {% endif %}

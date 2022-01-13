@@ -1,32 +1,38 @@
 {% set href = module.twitter.link.url.href %}
-	{% if module.twitter.link.url.type is equalto "EMAIL_ADDRESS" %}
-		{% set href = "mailto:" + href %}
-	{% endif %}
-	<a href="{{ href }}" style="color: {{ module.twitter.color.color }};"
-		{% if module.twitter.link.open_in_new_tab %}target="_blank"{% endif %}
-		{% if module.twitter.link.rel %}rel="{{ module.twitter.link.rel }}"{% endif %}
-		>
-		{{ module.twitter.icon }}
-	</a>
-	
-	{% set href = module.facebook.link.url.href %}
-	{% if module.facebook.link.url.type is equalto "EMAIL_ADDRESS" %}
-		{% set href = "mailto:" + href %}
-	{% endif %}
-	<a href="{{ href }}" style="color: {{ module.facebook.color.color }};"
-		{% if module.facebook.link.open_in_new_tab %}target="_blank"{% endif %}
-		{% if module.facebook.link.rel %}rel="{{ module.facebook.link.rel }}"{% endif %}
-		>
-		{{ module.facebook.icon }}
-	</a>
-	
-	{% set href = module.instagram.link.url.href %}
-	{% if module.instagram.link.url.type is equalto "EMAIL_ADDRESS" %}
-		{% set href = "mailto:" + href %}
-	{% endif %}
-	<a href="{{ href }}" style="color: {{ module.instagram.color.color }};"
-		{% if module.instagram.link.open_in_new_tab %}target="_blank"{% endif %}
-		{% if module.instagram.link.rel %}rel="{{ module.instagram.link.rel }}"{% endif %}
-		>
-		{{ module.instagram.icon }}
-	</a>
+
+{% if module.twitter.link.url.type is equalto "EMAIL_ADDRESS" %}
+	{% set href = "mailto:" + href %}
+{% endif %}
+
+<a href="{{ href }}" style="color: {{ module.twitter.color.color }};"
+	{% if module.twitter.link.open_in_new_tab %}target="_blank"{% endif %}
+	{% if module.twitter.link.rel %}rel="{{ module.twitter.link.rel }}"{% endif %}
+	>
+	{{ module.twitter.icon }}
+</a>
+
+{% set href = module.facebook.link.url.href %}
+
+{% if module.facebook.link.url.type is equalto "EMAIL_ADDRESS" %}
+	{% set href = "mailto:" + href %}
+{% endif %}
+
+<a href="{{ href }}" style="color: {{ module.facebook.color.color }};"
+	{% if module.facebook.link.open_in_new_tab %}target="_blank"{% endif %}
+	{% if module.facebook.link.rel %}rel="{{ module.facebook.link.rel }}"{% endif %}
+	>
+	{{ module.facebook.icon }}
+</a>
+
+{% set href = module.instagram.link.url.href %}
+
+{% if module.instagram.link.url.type is equalto "EMAIL_ADDRESS" %}
+	{% set href = "mailto:" + href %}
+{% endif %}
+
+<a href="{{ href }}" style="color: {{ module.instagram.color.color }};"
+	{% if module.instagram.link.open_in_new_tab %}target="_blank"{% endif %}
+	{% if module.instagram.link.rel %}rel="{{ module.instagram.link.rel }}"{% endif %}
+	>
+	{{ module.instagram.icon }}
+</a>

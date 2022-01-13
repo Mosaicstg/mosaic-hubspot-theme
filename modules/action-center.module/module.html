@@ -1,17 +1,18 @@
 <div class="button-row" style="background-color: {{ module.button_row_background_color.color }}">
   {% for item in module.button %}
+    <div class="button-column">
+        {% set href = module.button.link.url.href %}
 
-  <div class="button-column">
-    {% set href = module.button.link.url.href %}
-{% if module.button.link.url.type is equalto "EMAIL_ADDRESS" %}
-	{% set href = "mailto:" + href %}
-{% endif %}
-<a href="{{ href }}" style="color: {{ item.text_color.color }}; background-color: 	{{ item.background_color.color }}; border: 1px solid {{ item.border_color.color }};">
-	{% if module.button.link.open_in_new_tab %}target="_blank"{% endif %}
-	{% if module.button.link.rel %}rel="{{ module.button_1.link.rel }}"{% endif %}
-		{{ item.text }}
-</a>
-  </div>
+        {% if module.button.link.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+        {% endif %}
+
+        <a href="{{ href }}" style="color: {{ item.text_color.color }}; background-color: 	{{ item.background_color.color }}; border: 1px solid {{ item.border_color.color }};"
+          {% if module.button.link.open_in_new_tab %}target="_blank"{% endif %}
+          {% if module.button.link.rel %}rel="{{ module.button_1.link.rel }}"{% endif %}
+          >
+          {{ item.text }}
+        </a>
+    </div>
   {% endfor %}
-  
 </div>
