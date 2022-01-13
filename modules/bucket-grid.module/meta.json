@@ -1,6 +1,7 @@
 {
   "global" : false,
   "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "icon" : "../../images/module-icons/bucket-grid.svg",
   "module_id" : 61152199817,
   "label" : "Bucket Grid",
   "is_available_for_new_content" : true
