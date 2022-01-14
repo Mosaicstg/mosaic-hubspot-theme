@@ -1,0 +1,8 @@
+{
+  "global" : false,
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 63849833619,
+  "label" : "Three Column Image Grid",
+  "icon" : "../../images/module-icons/image-grid.svg",
+  "is_available_for_new_content" : true
+}

@@ -1,0 +1,31 @@
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.image-grid-item {
+  flex-basis: 33.333333%;
+  margin-bottom: 50px;
+}
+
+.image-grid-item img{
+  max-width: 300px;
+}
+
+.image-grid-item .image-caption {
+  margin-top: 20px;
+  color: var(--theme-emperor-gray);
+}
+
+@media only screen and (max-width: 768px) {
+  .image-grid {
+    display: block;
+  
+  }
+  .image-grid-item {
+      flex-basis: 100%;
+      margin-bottom: 30px;
+  }
+}
+
