@@ -1,0 +1,93 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: About
+  screenshotPath: ../images/template-previews/about.png
+-->
+{% extends "./layouts/base.html" %}
+
+{% block body %}
+
+{# All templates are recommended to have an h1 present for both accessibility and SEO best practice. This should be at the top of the template before any other textual content. The h1 element below is within a dnd area to allow content editors the ability to adjust the content and alignment of the text. #}
+{% dnd_area 'dnd_area'
+  label='Main section',
+  class='body-container body-container--about'
+%}
+
+  {# Hero banner #}
+  {% include_dnd_partial path='../sections/internal-page-hero.html'
+    context={
+      'content': '<h1 style="text-align: center;">About Us</h1><p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Et dolore magna aliqua. Ut enim ad minim veniam.</p>',
+      'hero_background_image': { "src": "{{ get_asset_url('../images/about-hero.jpg') }}", 'alt': 'About Us Hero Image'}
+    } 
+  %}
+
+  {% dnd_section %}
+    {% dnd_column %}
+      {% dnd_row %}
+        {% dnd_module
+          path='@hubspot/rich_text',
+          html={{ context.column_one_content || '<div style="text-align: center; max-width: 600px; margin: 0 auto;"><h2>Our Mission</h2><br><h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>' }}
+        %}
+        {% end_dnd_module %}
+      {% end_dnd_row %}
+      {% dnd_row %}
+        {% dnd_module path='../modules/vertical-bar.module' %}
+        {% end_dnd_module %}
+      {% end_dnd_row %}
+      {% dnd_row %}
+        {% dnd_module 
+          padding={
+            'default': {
+              'top': 0,
+              'right': 0,
+              'bottom': 100,
+              'left': 0
+            },
+            'mobile': {
+              'top': 0,
+              'right': 0,
+              'bottom': 75,
+              'left': 0
+            }
+          }
+          path='@hubspot/rich_text',
+          html={{ context.column_one_content || '<div style="text-align: center; max-width: 600px; margin: 0 auto;"><h2>The Team</h2><br><p>Et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>' }}
+        %}
+        {% end_dnd_module %}
+      {% end_dnd_row %}
+      {% dnd_row %}
+        {% dnd_module path='../modules/three-column-image-grid',
+          image_grid_item=[
+            {
+              "image_field": { "src": "{{ get_asset_url('../images/about/team-member-1.jpg') }}", 'alt': 'Team Member'},
+              "image_caption":"First Name Last Name<br>Title",
+            },
+            {
+              "image_field": { "src": "{{ get_asset_url('../images/about/team-member-2.jpg') }}", 'alt': 'Team Member'},
+              "image_caption":"First Name Last Name<br>Title",
+            },
+            {
+              "image_field": { "src": "{{ get_asset_url('../images/about/team-member-3.jpg') }}", 'alt': 'Team Member'},
+              "image_caption":"First Name Last Name<br>Title",
+            },
+            {
+              "image_field": { "src": "{{ get_asset_url('../images/about/team-member-4.jpg') }}", 'alt': 'Team Member'},
+              "image_caption":"First Name Last Name<br>Title",
+            },
+            {
+              "image_field": { "src": "{{ get_asset_url('../images/about/team-member-5.jpg') }}", 'alt': 'Team Member'},
+              "image_caption":"First Name Last Name<br>Title",
+            },
+            {
+              "image_field": { "src": "{{ get_asset_url('../images/about/team-member-6.jpg') }}", 'alt': 'Team Member'},
+              "image_caption":"First Name Last Name<br>Title",
+            }
+          ]
+        %}
+        {% end_dnd_module %}
+      {% end_dnd_row %}
+    {% end_dnd_column %}
+  {% end_dnd_section %}
+{% end_dnd_area %}
+{% endblock body %}
