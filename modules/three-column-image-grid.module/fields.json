@@ -1,107 +1,119 @@
-[ {
-  "id" : "298c7b3e-ffeb-7fe9-d00e-cd1a815baf0b",
-  "name" : "image_grid_item",
-  "display_width" : null,
-  "label" : "Image Grid Item",
-  "required" : false,
-  "locked" : false,
-  "occurrence" : {
-    "min" : null,
-    "max" : null,
-    "sorting_label_field" : null,
-    "default" : 6
-  },
-  "children" : [ {
-    "id" : "f8978542-7a87-d092-e4b9-0a462bd04358",
-    "name" : "image_field",
-    "display_width" : null,
-    "label" : "Image",
-    "required" : false,
-    "locked" : false,
-    "responsive" : true,
-    "resizable" : true,
-    "show_loading" : false,
-    "type" : "image",
-    "default" : {
-      "src" : "https://21052062.fs1.hubspotusercontent-na1.net/hubfs/21052062/butterfly.jpg",
-      "alt" : "butterfly",
-      "width" : 383,
-      "height" : 351,
-      "max_width" : 383,
-      "max_height" : 351
-    }
-  }, {
-    "id" : "c675dd8a-607b-8476-3fc2-1a3d2b3ac884",
-    "name" : "image_caption",
-    "display_width" : null,
-    "label" : "Image Caption",
-    "required" : false,
-    "locked" : false,
-    "type" : "richtext",
-    "default" : "<p>Lorem Ipsum Lorem Ipsum</p>\n<p>The bipartisan infrastructure bill can help fight climate change and protect other resources that support all life on earth.</p>"
-  } ],
-  "tab" : "CONTENT",
-  "expanded" : false,
-  "type" : "group",
-  "default" : [ {
-    "image_field" : {
-      "src" : "https://21052062.fs1.hubspotusercontent-na1.net/hubfs/21052062/butterfly.jpg",
-      "alt" : "butterfly",
-      "width" : 383,
-      "height" : 351,
-      "max_width" : 383,
-      "max_height" : 351
+[
+  {
+    "id": "298c7b3e-ffeb-7fe9-d00e-cd1a815baf0b",
+    "name": "image_grid_item",
+    "display_width": null,
+    "label": "Image Grid Item",
+    "required": false,
+    "locked": false,
+    "occurrence": {
+      "min": null,
+      "max": null,
+      "sorting_label_field": null,
+      "default": 6
     },
-    "image_caption" : "<p>Lorem Ipsum Lorem Ipsum</p>\n<p>The bipartisan infrastructure bill can help fight climate change and protect other resources that support all life on earth.</p>"
-  }, {
-    "image_field" : {
-      "src" : "https://21052062.fs1.hubspotusercontent-na1.net/hubfs/21052062/butterfly.jpg",
-      "alt" : "butterfly",
-      "width" : 383,
-      "height" : 351,
-      "max_width" : 383,
-      "max_height" : 351
-    },
-    "image_caption" : "<p>Lorem Ipsum Lorem Ipsum</p>\n<p>The bipartisan infrastructure bill can help fight climate change and protect other resources that support all life on earth.</p>"
-  }, {
-    "image_field" : {
-      "src" : "https://21052062.fs1.hubspotusercontent-na1.net/hubfs/21052062/butterfly.jpg",
-      "alt" : "butterfly",
-      "width" : 383,
-      "height" : 351,
-      "max_width" : 383,
-      "max_height" : 351
-    },
-    "image_caption" : "<p>Lorem Ipsum Lorem Ipsum</p>\n<p>The bipartisan infrastructure bill can help fight climate change and protect other resources that support all life on earth.</p>"
-  }, {
-    "image_field" : {
-      "src" : "https://21052062.fs1.hubspotusercontent-na1.net/hubfs/21052062/butterfly.jpg",
-      "alt" : "butterfly",
-      "width" : 383,
-      "height" : 351,
-      "max_width" : 383,
-      "max_height" : 351
-    },
-    "image_caption" : "<p>Lorem Ipsum Lorem Ipsum</p>\n<p>The bipartisan infrastructure bill can help fight climate change and protect other resources that support all life on earth.</p>"
-  }, {
-    "image_field" : {
-      "src" : "https://21052062.fs1.hubspotusercontent-na1.net/hubfs/21052062/butterfly.jpg",
-      "alt" : "butterfly",
-      "width" : 383,
-      "height" : 351,
-      "max_width" : 383,
-      "max_height" : 351
-    },
-    "image_caption" : "<p>Lorem Ipsum Lorem Ipsum</p>\n<p>The bipartisan infrastructure bill can help fight climate change and protect other resources that support all life on earth.</p>"
-  }, {
-    "image_field" : {
-      "src" : "https://21052062.fs1.hubspotusercontent-na1.net/hubfs/21052062/butterfly.jpg",
-      "alt" : "butterfly",
-      "width" : 383,
-      "height" : 351,
-      "max_width" : 383,
-      "max_height" : 351
-    },
-    "image_caption" : "<p>Lorem Ipsum Lorem Ipsum</p>\n<p>The bipartisan infrastructure bill can help fight climate change and protect other resources that support all life on earth.</p>"
-  } ]
-} ]
+    "children": [
+      {
+        "id": "f8978542-7a87-d092-e4b9-0a462bd04358",
+        "name": "image_field",
+        "display_width": null,
+        "label": "Image",
+        "required": false,
+        "locked": false,
+        "responsive": true,
+        "resizable": true,
+        "show_loading": false,
+        "type": "image",
+        "default": {
+          "src": "https://21052062.fs1.hubspotusercontent-na1.net/hubfs/21052062/butterfly.jpg",
+          "alt": "butterfly",
+          "width": 383,
+          "height": 351,
+          "max_width": 383,
+          "max_height": 351
+        }
+      },
+      {
+        "id": "c675dd8a-607b-8476-3fc2-1a3d2b3ac884",
+        "name": "image_caption",
+        "display_width": null,
+        "label": "Image Caption",
+        "required": false,
+        "locked": false,
+        "type": "richtext",
+        "default": "<p>Lorem Ipsum Lorem Ipsum</p>\n<p>The bipartisan infrastructure bill can help fight climate change and protect other resources that support all life on earth.</p>"
+      }
+    ],
+    "tab": "CONTENT",
+    "expanded": false,
+    "type": "group",
+    "default": [
+      {
+        "image_field": {
+          "src": "https://21052062.fs1.hubspotusercontent-na1.net/hubfs/21052062/butterfly.jpg",
+          "alt": "butterfly",
+          "width": 383,
+          "height": 351,
+          "max_width": 383,
+          "max_height": 351
+        },
+        "image_caption": "<p>Lorem Ipsum Lorem Ipsum</p>\n<p>The bipartisan infrastructure bill can help fight climate change and protect other resources that support all life on earth.</p>"
+      },
+      {
+        "image_field": {
+          "src": "https://21052062.fs1.hubspotusercontent-na1.net/hubfs/21052062/butterfly.jpg",
+          "alt": "butterfly",
+          "width": 383,
+          "height": 351,
+          "max_width": 383,
+          "max_height": 351
+        },
+        "image_caption": "<p>Lorem Ipsum Lorem Ipsum</p>\n<p>The bipartisan infrastructure bill can help fight climate change and protect other resources that support all life on earth.</p>"
+      },
+      {
+        "image_field": {
+          "src": "https://21052062.fs1.hubspotusercontent-na1.net/hubfs/21052062/butterfly.jpg",
+          "alt": "butterfly",
+          "width": 383,
+          "height": 351,
+          "max_width": 383,
+          "max_height": 351
+        },
+        "image_caption": "<p>Lorem Ipsum Lorem Ipsum</p>\n<p>The bipartisan infrastructure bill can help fight climate change and protect other resources that support all life on earth.</p>"
+      },
+      {
+        "image_field": {
+          "src": "https://21052062.fs1.hubspotusercontent-na1.net/hubfs/21052062/butterfly.jpg",
+          "alt": "butterfly",
+          "width": 383,
+          "height": 351,
+          "max_width": 383,
+          "max_height": 351
+        },
+        "image_caption": "<p>Lorem Ipsum Lorem Ipsum</p>\n<p>The bipartisan infrastructure bill can help fight climate change and protect other resources that support all life on earth.</p>"
+      },
+      {
+        "image_field": {
+          "src": "https://21052062.fs1.hubspotusercontent-na1.net/hubfs/21052062/butterfly.jpg",
+          "alt": "butterfly",
+          "width": 383,
+          "height": 351,
+          "max_width": 383,
+          "max_height": 351
+        },
+        "image_caption": "<p>Lorem Ipsum Lorem Ipsum</p>\n<p>The bipartisan infrastructure bill can help fight climate change and protect other resources that support all life on earth.</p>"
+      },
+      {
+        "image_field": {
+          "src": "https://21052062.fs1.hubspotusercontent-na1.net/hubfs/21052062/butterfly.jpg",
+          "alt": "butterfly",
+          "width": 383,
+          "height": 351,
+          "max_width": 383,
+          "max_height": 351
+        },
+        "image_caption": "<p>Lorem Ipsum Lorem Ipsum</p>\n<p>The bipartisan infrastructure bill can help fight climate change and protect other resources that support all life on earth.</p>"
+      }
+    ]
+  }
+]

@@ -15,7 +15,8 @@
 %}
 
   {# Hero banner #}
-  {% include_dnd_partial path='../sections/internal-page-hero.html'
+  {% include_dnd_partial 
+    path='../sections/internal-page-hero.html'
     context={
       'content': '<h1 style="text-align: center;">About Us</h1><p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Et dolore magna aliqua. Ut enim ad minim veniam.</p>',
       'hero_background_image': { "src": "{{ get_asset_url('../images/about-hero.jpg') }}", 'alt': 'About Us Hero Image'}
@@ -57,7 +58,8 @@
         {% end_dnd_module %}
       {% end_dnd_row %}
       {% dnd_row %}
-        {% dnd_module path='../modules/three-column-image-grid',
+        {% dnd_module 
+          path='../modules/three-column-image-grid',
           image_grid_item=[
             {
               "image_field": { "src": "{{ get_asset_url('../images/about/team-member-1.jpg') }}", 'alt': 'Team Member'},
