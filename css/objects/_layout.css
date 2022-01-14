@@ -91,6 +91,7 @@
 @media (max-width: 767px) {
     .row-fluid {
         width: 100%;
+        justify-content: center;
     }
 
     .row-fluid [class*='span'] {
