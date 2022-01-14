@@ -28,6 +28,14 @@ footer .upper-footer__container {
     margin-right: 20px;
 }
 
+.footer img {
+    margin-bottom: 30px;
+}
+
+.footer a {
+    color: var(--footer-color);
+}
+
 .upper-footer__container form input[type=email] {
     background: transparent;
     border: none;
