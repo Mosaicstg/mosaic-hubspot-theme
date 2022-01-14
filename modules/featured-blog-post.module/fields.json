@@ -6,7 +6,7 @@
     "label": "Tag",
     "required": false,
     "locked": false,
-    "tag_value": "NAME",
+    "tag_value": "ALL",
     "type": "tag",
     "default": "Featured News"
   },
