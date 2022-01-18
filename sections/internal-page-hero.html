@@ -55,8 +55,17 @@
       } 
     %}
       {% dnd_module 
-        path='../modules/internal-page-hero.module' ,
-        richtext_field={{ context.content }}
+        path='../modules/internal-page-hero.module',
+        richtext_field={{ context.content }},
+
+        style={
+        "background":{
+          "backgroundimage_field":{
+            "src": context.hero_background_image
+          
+          }
+        }
+      }  
       %}
       {% end_dnd_module %}
     {% end_dnd_row %}
