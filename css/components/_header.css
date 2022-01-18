@@ -17,6 +17,16 @@
     text-transform: var(--header-nav-link-text-transform);
 }
 
+.menu__wrapper > .menu__item:last-child a {
+  background-color: var(--theme-tertiery);
+  color: var(--header-background);
+  padding: 10px 20px;
+}
+
+.menu__wrapper > .menu__item:last-child a:hover {
+  background-color: var(--theme-secondary);
+}
+
 .header .dnd-section {
   padding: 0;
 }
