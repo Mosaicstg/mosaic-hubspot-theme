@@ -9,8 +9,10 @@
   margin-bottom: 50px;
 }
 
-.image-grid-item img{
+.image-grid-item img {
   max-width: 300px;
+  max-height: 300px;
+  object-fit: cover;
 }
 
 .image-grid-item .image-caption {
@@ -26,6 +28,9 @@
   .image-grid-item {
       flex-basis: 100%;
       margin-bottom: 30px;
+  }
+  .image-grid-item img {
+    max-width: 100%;
   }
 }
 
