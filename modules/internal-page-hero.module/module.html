@@ -7,27 +7,29 @@
 
 {% require_css %}
   <style>
-    .internal-page-hero {
-      {{ module.style.background.backgroundimage_field.css }}
-      {{ module.style.padding.css }}
-    }
-    
-    .hero-overlay {
-      background: {{ module.style.background.overlay.css }};
-    }
-    
-    .hero-content {
-      color: {{ module.style.text_color.color }}; 
-      max-width: {{ module.style.max_width ~ 'px'}};
-    }
-    
-    .hero-content h1,
-    .hero-content h2,
-    .hero-content h3,
-    .hero-content h4,
-    .hero-content h5,
-    .hero-content h6 {
-      color: {{ module.style.text_color.color }};
-    }
+    {% scope_css %}
+      .internal-page-hero {
+        {{ module.style.background.backgroundimage_field.css }}
+        {{ module.style.padding.css }}
+      }
+      
+      .hero-overlay {
+        background: {{ module.style.background.overlay.css }};
+      }
+      
+      .hero-content {
+        color: {{ module.style.text_color.color }}; 
+        max-width: {{ module.style.max_width ~ 'px'}};
+      }
+      
+      .hero-content h1,
+      .hero-content h2,
+      .hero-content h3,
+      .hero-content h4,
+      .hero-content h5,
+      .hero-content h6 {
+        color: {{ module.style.text_color.color }};
+      }
+    {% end_scope_css %}
   </style>
 {% end_require_css %}
