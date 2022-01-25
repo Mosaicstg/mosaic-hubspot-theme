@@ -53,6 +53,10 @@ footer .upper-footer__container {
     padding: 10px 20px;
 }
 
+.upper-footer__container form input[type=submit]:hover {
+    color: var(--theme-senary);
+}
+
 .upper-footer__container form .hs-form-field {
     display: inline-block;
     width: 60%;
