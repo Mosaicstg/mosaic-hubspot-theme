@@ -1,0 +1,45 @@
+{% if module.use_background_image %}
+	<div class="video-hero-banner" style="{{ module.style.backgroundimage_field.css }} {{ module.style.padding.css }}">
+    <div class="video-hero-overlay"></div>
+    <div class="video-hero-banner-video"></div>
+    <div class="video-hero-banner-content">
+      {{ module.banner_headline }}
+    </div>
+  </div>
+{% else %}
+<div class="video-hero-banner">
+  <div class="video-hero-overlay"></div>
+    <video class="video-hero-banner-video" autoplay loop muted>
+      <source src="{{ module.video_file }}" type="video/mp4">
+      <source src="{{ module.video_file }}" type="video/ogg">
+      Your browser does not support the video tag.
+    </video>
+  <div class="video-hero-banner-content" style="{{ module.style.padding.css }}">
+    {{ module.banner_headline }}
+  </div>
+</div>
+{% endif %}
+
+{% require_css %}
+  <style>
+    {% scope_css %}
+      .video-hero-overlay {
+        background: {{ module.style.overlay.css }};
+      }
+      
+      .video-hero-banner-content {
+        color: {{ module.style.text_color.color }}; 
+        max-width: {{ module.style.max_width ~ 'px'}};
+      }
+      
+      .video-hero-banner-content h1,
+      .video-hero-banner-content h2,
+      .video-hero-banner-content h3,
+      .video-hero-banner-content h4,
+      .video-hero-banner-content h5,
+      .video-hero-banner-content h6 {
+        color: {{ module.style.text_color.color }};
+      }
+    {% end_scope_css %}
+  </style>
+{% end_require_css %}

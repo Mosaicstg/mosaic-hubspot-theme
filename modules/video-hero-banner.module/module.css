@@ -1,0 +1,38 @@
+.video-hero-banner {
+  position: relative;
+}
+
+.video-hero-overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-hero-banner-video {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+ .video-hero-banner-content {
+  position: relative;
+  margin: 0 auto;
+} 
+
+.video-hero-banner-content h1 {
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .video-hero-banner-content {
+    padding: 0 20px;
+  }
+}
