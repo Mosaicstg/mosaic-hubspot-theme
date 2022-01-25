@@ -183,9 +183,9 @@
   },
   {
     "id": "f2af4fc7-772c-527c-4aff-550ceec6a71c",
-    "name": "richtext_field",
+    "name": "headline",
     "display_width": null,
-    "label": "Rich text",
+    "label": "Headline",
     "required": false,
     "locked": false,
     "type": "richtext",
