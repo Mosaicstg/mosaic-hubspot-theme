@@ -1,0 +1,77 @@
+<!--
+  templateType: section
+  label: Three Column Image Grid
+  isAvailableForNewContent: true
+  screenshotPath: ../images/section-previews/three-column-image-grid.png
+  description: "A three column image layout."
+-->
+{% dnd_section %}
+    {% dnd_column %}
+      {% dnd_row %}
+        {% dnd_module
+          path='@hubspot/rich_text',
+          html={{ context.column_one_content || '<div style="text-align: center; max-width: 600px; margin: 0 auto;"><h2>Our Mission</h2><br><h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>' }}
+        %}
+        {% end_dnd_module %}
+      {% end_dnd_row %}
+      {% dnd_row %}
+        {% dnd_module path='../modules/vertical-bar.module' %}
+        {% end_dnd_module %}
+      {% end_dnd_row %}
+      {% dnd_row %}
+        {% dnd_module 
+          padding={
+            'default': {
+              'top': 0,
+              'right': 0,
+              'bottom': 100,
+              'left': 0
+            },
+            'mobile': {
+              'top': 0,
+              'right': 0,
+              'bottom': 75,
+              'left': 0
+            }
+          }
+          path='@hubspot/rich_text',
+          html={{ context.column_one_content || '<div style="text-align: center; max-width: 600px; margin: 0 auto;"><h2>The Team</h2><br><p>Et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>' }}
+        %}
+        {% end_dnd_module %}
+      {% end_dnd_row %}
+      {% dnd_row %}
+        {% dnd_module 
+          path='../modules/image-with-caption.module',
+          offset=0, 
+          width=4  %}
+        {% end_dnd_module %}
+        {% dnd_module 
+          path='../modules/image-with-caption.module',
+          offset=4, 
+          width=4  %}
+        {% end_dnd_module %}
+        {% dnd_module 
+          path='../modules/image-with-caption.module',
+          offset=8, 
+          width=4  %}
+        {% end_dnd_module %}
+      {% end_dnd_row %}
+      {% dnd_row %}
+        {% dnd_module 
+          path='../modules/image-with-caption.module',
+          offset=0, 
+          width=4  %}
+        {% end_dnd_module %}
+        {% dnd_module 
+          path='../modules/image-with-caption.module',
+          offset=4, 
+          width=4  %}
+        {% end_dnd_module %}
+        {% dnd_module 
+          path='../modules/image-with-caption.module',
+          offset=8, 
+          width=4  %}
+        {% end_dnd_module %}
+      {% end_dnd_row %}
+    {% end_dnd_column %}
+  {% end_dnd_section %}
