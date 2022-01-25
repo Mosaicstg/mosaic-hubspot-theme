@@ -58,36 +58,7 @@
         {% end_dnd_module %}
       {% end_dnd_row %}
       {% dnd_row %}
-        {% dnd_module 
-          path='../modules/three-column-image-grid',
-          image_grid_item=[
-            {
-              "image_field": { "src": "{{ get_asset_url('../images/about/team-member-1.jpg') }}", 'alt': 'Team Member'},
-              "image_caption":"First Name Last Name<br>Title",
-            },
-            {
-              "image_field": { "src": "{{ get_asset_url('../images/about/team-member-2.jpg') }}", 'alt': 'Team Member'},
-              "image_caption":"First Name Last Name<br>Title",
-            },
-            {
-              "image_field": { "src": "{{ get_asset_url('../images/about/team-member-3.jpg') }}", 'alt': 'Team Member'},
-              "image_caption":"First Name Last Name<br>Title",
-            },
-            {
-              "image_field": { "src": "{{ get_asset_url('../images/about/team-member-4.jpg') }}", 'alt': 'Team Member'},
-              "image_caption":"First Name Last Name<br>Title",
-            },
-            {
-              "image_field": { "src": "{{ get_asset_url('../images/about/team-member-5.jpg') }}", 'alt': 'Team Member'},
-              "image_caption":"First Name Last Name<br>Title",
-            },
-            {
-              "image_field": { "src": "{{ get_asset_url('../images/about/team-member-6.jpg') }}", 'alt': 'Team Member'},
-              "image_caption":"First Name Last Name<br>Title",
-            }
-          ]
-        %}
-        {% end_dnd_module %}
+        {% include_dnd_partial path='../sections/three-column-image-grid.html' %}
       {% end_dnd_row %}
     {% end_dnd_column %}
   {% end_dnd_section %}
