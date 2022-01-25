@@ -1,0 +1,42 @@
+<div class="link-with-icon">
+  
+    {% set href = module.link.url.href %}
+  
+    {% if module.link.url.type is equalto "EMAIL_ADDRESS" %}
+      {% set href = "mailto:" + href %}
+    {% endif %}
+  
+    <a href="{{ href }}"
+      {% if module.link.open_in_new_tab %}target="_blank"{% endif %}
+      {% if module.link.rel %}rel="{{ module.link.rel }}"{% endif %} >
+      <div class="link-with-icon-content">
+        <div style="text-align: center; color: {{ module.text_color.color }}; font-weight: {{ module.font_weight }} ">
+          {{ module.text }}
+        </div>
+        {% if module.display_icon %}
+          <div class="icon">
+            {% icon 
+              name="{{ module.icon.name }}"
+              style="{{ module.icon.type }};" 
+              unicode="{{ module.icon.unicode }}" 
+              icon_set="{{ module.icon.icon_set }}"
+            %} 
+          </div>
+        {% endif %}
+      </div>
+    </a>
+</div>
+
+{% require_css %}
+  <style>
+    {% scope_css %}
+      .icon svg {
+        fill: {{ module.text_color.color }};
+        height: 15px;
+        margin-left: 15px;
+        transform: translateY(2px);
+        font-weight: normal;
+    }
+    {% end_scope_css %}
+  </style>
+{% end_require_css %}

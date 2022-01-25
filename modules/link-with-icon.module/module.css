@@ -1,0 +1,9 @@
+.link-with-icon .link-with-icon-content {
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+}
+
+.link-with-icon a {
+  text-decoration: none;
+}
