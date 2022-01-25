@@ -37,7 +37,7 @@
         "required": false,
         "locked": false,
         "type": "richtext",
-        "default": "<h3>Every family and individual deserves a <span class='blue'>safe place</span> to reside without fear of the future.</h3>\n<p>We partner with families and individuals whose homes are in compromised locations to protect and provide safe and adequate housing.</p>\n<p>How it works →</p>"
+        "default": "<h3>Every family and individual deserves a <span class='blue'>safe place</span> to reside without fear of the future.</h3>\n<p>We partner with families and individuals whose homes are in compromised locations to protect and provide safe and adequate housing.</p>\n<p><b>How it works →</b></p>"
       },
       {
         "id": "cdea5c5e-8c88-f2e4-6dc7-c8c674b66270",
@@ -57,7 +57,7 @@
     "expanded": false,
     "type": "group",
     "default": {
-      "text": "<h3>Every family and individual deserves a <span class='blue'>safe place</span> to reside without fear of the future.</h3>\n<p>We partner with families and individuals whose homes are in compromised locations to protect and provide safe and adequate housing.</p>\n<p>How it works →</p>",
+      "text": "<h3>Every family and individual deserves a <span class='blue'>safe place</span> to reside without fear of the future.</h3>\n<p>We partner with families and individuals whose homes are in compromised locations to protect and provide safe and adequate housing.</p>\n<p><b>How it works →</b></p>",
       "content_background_color": {
         "color": "#F5F5F5",
         "opacity": 100
