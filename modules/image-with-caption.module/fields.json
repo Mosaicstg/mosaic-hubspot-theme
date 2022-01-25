@@ -1,0 +1,31 @@
+[ {
+  "id" : "fc6c6ce5-da0d-ed1a-0100-21d7e8c645ce",
+  "name" : "image",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent10.net/hubfs/21052062/indmill.jpg",
+    "alt" : "indmill",
+    "loading" : "lazy",
+    "width" : 383,
+    "height" : 351,
+    "max_width" : 300,
+    "max_height" : 275
+  }
+}, {
+  "id" : "aab0e503-bdac-e1cf-2170-b8a85f8855a3",
+  "name" : "image_caption",
+  "display_width" : null,
+  "label" : "Image Caption",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>First Name Last Name</p>\n<p>Title</p>"
+} ]
