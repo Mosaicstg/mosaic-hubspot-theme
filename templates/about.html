@@ -23,7 +23,22 @@
     } 
   %}
 
-  {% dnd_section %}
+  {% dnd_section
+    background_color={
+    r: 245,
+    g: 245,
+    b: 245,
+    a: 1.0
+  },
+  padding={
+  'default': {
+    'top': 80,
+    'right': 16,
+    'bottom': 0,
+    'left': 16
+    } 
+  } 
+ %}
     {% dnd_column %}
       {% dnd_row %}
         {% dnd_module
@@ -42,13 +57,13 @@
             'default': {
               'top': 0,
               'right': 0,
-              'bottom': 100,
+              'bottom': 0,
               'left': 0
             },
             'mobile': {
               'top': 0,
               'right': 0,
-              'bottom': 75,
+              'bottom': 0,
               'left': 0
             }
           }
