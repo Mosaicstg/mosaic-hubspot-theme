@@ -1,11 +1,12 @@
 <!--
   templateType: section
-  label: Three Column Image Grid
+  label: Three-column Image Grid
   isAvailableForNewContent: true
   screenshotPath: ../images/section-previews/three-column-image-grid.png
-  description: "A three column image layout."
+  description: "A three-column image layout."
 -->
 {% dnd_section 
+    class='three-column-image-grid'
     background_color={
     r: 245,
     g: 245,
@@ -35,9 +36,9 @@
           image={
               "src": context.image_1 || "{{ get_asset_url('../images/about/team-member-1.jpg')}}",
             }
-          image_caption={{ context.caption || '<p>First Name Last Name<br>Title</p>' }},
+          image_caption={{ context.caption || context.donate_caption || '<p>First Name Last Name<br>Title</p>' }},
           offset=0, 
-          width=4  
+          width=4
         %}
         {% end_dnd_module %}
         {% dnd_module 
@@ -45,7 +46,7 @@
           image={
             "src": context.image_2 || "{{ get_asset_url('../images/about/team-member-2.jpg')}}",
            }
-          image_caption={{ context.caption || '<p>First Name Last Name<br>Title</p>' }},
+          image_caption={{ context.caption || context.donate_caption || '<p>First Name Last Name<br>Title</p>' }},
           offset=4, 
           width=4  %}
         {% end_dnd_module %}
@@ -54,7 +55,7 @@
           image={
             "src": context.image_3  || "{{ get_asset_url('../images/about/team-member-3.jpg')}}",
             }
-          image_caption={{ context.caption || '<p>First Name Last Name<br>Title</p>' }},
+          image_caption={{ context.caption || context.donate_caption || '<p>First Name Last Name<br>Title</p>' }},
           offset=8, 
           width=4  
         %}
@@ -66,7 +67,7 @@
           image={
           "src": context.image_4 || "{{ get_asset_url('../images/about/team-member-4.jpg')}}",
           }
-          image_caption={{ context.caption || '<p>First Name Last Name<br>Title</p>' }},
+          image_caption={{ context.caption || context.donate_caption || '<p>First Name Last Name<br>Title</p>' }},
           offset=0, 
           width=4  %}
         {% end_dnd_module %}
@@ -75,7 +76,7 @@
           image={
           "src": context.image_5  || "{{ get_asset_url('../images/about/team-member-5.jpg')}}",
           }
-          image_caption={{ context.caption || '<p>First Name Last Name<br>Title</p>'}},
+          image_caption={{ context.caption || context.donate_caption || '<p>First Name Last Name<br>Title</p>'}},
           offset=4, 
           width=4  %}
         {% end_dnd_module %}
@@ -84,7 +85,7 @@
           image={
           "src": context.image_6 || "{{ get_asset_url('../images/about/team-member-6.jpg')}}",
           }
-          image_caption={{ context.caption || '<p>First Name Last Name<br>Title</p>' }},
+          image_caption={{ context.caption || context.donate_caption || '<p>First Name Last Name<br>Title</p>' }},
           offset=8, 
           width=4  %}
         {% end_dnd_module %}
