@@ -57,10 +57,20 @@
         %}
         {% end_dnd_module %}
       {% end_dnd_row %}
-      {% dnd_row %}
-        {% include_dnd_partial path='../sections/three-column-image-grid.html' %}
-      {% end_dnd_row %}
     {% end_dnd_column %}
   {% end_dnd_section %}
+
+  {% include_dnd_partial path='../sections/three-column-image-grid.html',
+    context={
+    'image_1': "{{ get_asset_url('../images/about/team-member-1.jpg')}}",
+    'image_2': "{{ get_asset_url('../images/about/team-member-2.jpg')}}",
+    'image_3': "{{ get_asset_url('../images/about/team-member-3.jpg')}}",
+    'image_4': "{{ get_asset_url('../images/about/team-member-4.jpg')}}",
+    'image_5': "{{ get_asset_url('../images/about/team-member-5.jpg')}}",
+    'image_6': "{{ get_asset_url('../images/about/team-member-6.jpg')}}",
+    "caption": '<p>First Name Last Name<br>Title</p>'
+    } 
+  %}
+
 {% end_dnd_area %}
 {% endblock body %}

@@ -30,7 +30,15 @@
       g: 245,
       b: 245,
       a: 1.0
-    } 
+    },
+    padding={
+    'default': {
+      'top': 80,
+      'right': 16,
+      'bottom': 0,
+      'left': 16
+      } 
+    }  
   %}
 
     {% dnd_column %}
@@ -85,39 +93,19 @@
         %}
         {% end_dnd_module %}
       {% end_dnd_row %}
-      {% dnd_row %}
-        {% dnd_module 
-          path='../modules/three-column-image-grid',
-          image_grid_item=[
-            {
-              "image_field": { "src": "{{ get_asset_url('../images/donate/butterfly.jpg') }}", 'alt': 'Butterfly'},
-              "image_caption":"Lorem Ipsum Lorem Ipsum. <br>The bipartisan infrastructure bill can help fight climate change and protect other resources that support all life on earth.",
-            },
-            {
-              "image_field": { "src": "{{ get_asset_url('../images/donate/tree.jpg') }}", 'alt': 'Tree'},
-              "image_caption":"Lorem Ipsum Lorem Ipsum. <br>The bipartisan infrastructure bill can help fight climate change and protect other resources that support all life on earth.",
-            },
-            {
-              "image_field": { "src": "{{ get_asset_url('../images/donate/windmill.jpg') }}", 'alt': 'Windmill'},
-              "image_caption":"Lorem Ipsum Lorem Ipsum. <br>The bipartisan infrastructure bill can help fight climate change and protect other resources that support all life on earth.",
-            },
-            {
-              "image_field": { "src": "{{ get_asset_url('../images/donate/sea-turtle.jpg') }}", 'alt': 'Sea Turtle'},
-              "image_caption":"Lorem Ipsum Lorem Ipsum. <br>The bipartisan infrastructure bill can help fight climate change and protect other resources that support all life on earth.",
-            },
-            {
-              "image_field": { "src": "{{ get_asset_url('../images/donate/nature.jpg') }}", 'alt': 'Nature'},
-              "image_caption":"Lorem Ipsum Lorem Ipsum. <br>The bipartisan infrastructure bill can help fight climate change and protect other resources that support all life on earth.",
-            },
-            {
-              "image_field": { "src": "{{ get_asset_url('../images/donate/lake.jpg') }}", 'alt': 'Lake'},
-              "image_caption":"Lorem Ipsum Lorem Ipsum. <br>The bipartisan infrastructure bill can help fight climate change and protect other resources that support all life on earth.",
-            }
-          ]
-        %}
-        {% end_dnd_module %}
-      {% end_dnd_row %}
     {% end_dnd_column %}
   {% end_dnd_section %}
+
+  {% include_dnd_partial path='../sections/three-column-image-grid.html',
+    context={
+    'image_1': "{{ get_asset_url('../images/donate/butterfly.jpg')}}",
+    'image_2': "{{ get_asset_url('../images/donate/lake.jpg')}}",
+    'image_3': "{{ get_asset_url('../images/donate/nature.jpg')}}",
+    'image_4': "{{ get_asset_url('../images/donate/sea-turtle.jpg')}}",
+    'image_5': "{{ get_asset_url('../images/donate/tree.jpg')}}",
+    'image_6': "{{ get_asset_url('../images/donate/windmill.jpg')}}",
+    "caption": '<p>Image Title<br>Image Caption</p>'
+    } 
+  %}
 {% end_dnd_area %}
 {% endblock body %}
