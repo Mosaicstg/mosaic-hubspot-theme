@@ -2,6 +2,7 @@
   "global" : false,
   "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
   "module_id" : 64725608319,
+  "icon" : "../../images/module-icons/square-image.svg",
   "label" : "Image with Caption",
   "is_available_for_new_content" : true
 }
