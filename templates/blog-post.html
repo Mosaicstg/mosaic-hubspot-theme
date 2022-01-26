@@ -10,7 +10,10 @@
 {% block body %}
 <div class="body-container body-container--blog-post">
   {# Hero banner #}
-  {% module "module_164028865747914" path="/Hackathon/modules/internal-page-hero" %}
+  {% module "module_164028865747914" path="../modules/internal-page-hero",
+  headline= '<h1 style="text-align: center;">News</h1><p style="text-align: center;">We’re a nonprofit, nonpartisan organization with amazing volunteers nationwide. Our solution to climate change? Democracy. And we need you on our team.</p>',
+
+   %}
   {# Blog post #}
   <div class="content-wrapper">
     <article class="blog-post">
