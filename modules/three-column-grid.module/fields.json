@@ -295,7 +295,7 @@
       },
       {
         "id": "fc384e37-4736-40fe-2724-b4e4c122ebe4",
-        "name": "Link",
+        "name": "link",
         "display_width": null,
         "label": "Link",
         "required": false,
