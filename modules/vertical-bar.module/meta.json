@@ -1,8 +1,15 @@
 {
-  "global" : false,
-  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
-  "icon" : "../../images/module-icons/vertical-bar.svg",
-  "module_id" : 60904303890,
-  "label" : "Vertical Bar",
-  "is_available_for_new_content" : true
+  "global": false,
+  "host_template_types": [
+    "PAGE",
+    "BLOG_POST",
+    "BLOG_LISTING"
+  ],
+  "icon": "../../images/module-icons/vertical-bar.svg",
+  "categories": [
+    "design"
+  ],
+  "module_id": 60904303890,
+  "label": "Vertical Bar",
+  "is_available_for_new_content": true
 }

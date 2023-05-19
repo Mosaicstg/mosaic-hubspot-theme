@@ -1,8 +1,16 @@
 {
-  "global" : false,
-  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
-  "icon" : "../../images/module-icons/partners.svg",
-  "module_id" : 60977028479,
-  "label" : "Partner Logos",
-  "is_available_for_new_content" : true
+  "global": false,
+  "host_template_types": [
+    "PAGE",
+    "BLOG_POST",
+    "BLOG_LISTING"
+  ],
+  "icon": "../../images/module-icons/partners.svg",
+  "categories": [
+    "body_content",
+    "media"
+  ],
+  "module_id": 60977028479,
+  "label": "Partner Logos",
+  "is_available_for_new_content": true
 }

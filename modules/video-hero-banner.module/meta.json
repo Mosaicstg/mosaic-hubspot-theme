@@ -1,8 +1,16 @@
 {
-  "global" : false,
-  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
-  "module_id" : 64245518090,
-  "icon" : "../../images/module-icons/video.svg",
-  "label" : "Video Hero Banner",
-  "is_available_for_new_content" : true
+  "global": false,
+  "host_template_types": [
+    "PAGE",
+    "BLOG_POST",
+    "BLOG_LISTING"
+  ],
+  "module_id": 64245518090,
+  "categories": [
+    "body_content",
+    "media"
+  ],
+  "icon": "../../images/module-icons/video.svg",
+  "label": "Video Hero Banner",
+  "is_available_for_new_content": true
 }

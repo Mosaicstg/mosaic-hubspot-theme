@@ -1,8 +1,13 @@
 {
-  "global" : false,
-  "icon" : "../../images/module-icons/click-button.svg",
-  "host_template_types" : [ "PAGE" ],
-  "module_id" : 60289587755,
-  "label" : "Button",
-  "is_available_for_new_content" : true
+  "global": false,
+  "icon": "../../images/module-icons/click-button.svg",
+  "host_template_types": [
+    "PAGE"
+  ],
+  "categories": [
+    "forms_and_buttons"
+  ],
+  "module_id": 60289587755,
+  "label": "Button",
+  "is_available_for_new_content": true
 }

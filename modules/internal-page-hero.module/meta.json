@@ -1,8 +1,16 @@
 {
-  "global" : false,
-  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
-  "icon" : "../../images/module-icons/hero-banner.svg",
-  "module_id" : 62400199807,
-  "label" : "Internal Page Hero",
-  "is_available_for_new_content" : true
+  "global": false,
+  "host_template_types": [
+    "PAGE",
+    "BLOG_POST",
+    "BLOG_LISTING"
+  ],
+  "icon": "../../images/module-icons/hero-banner.svg",
+  "categories": [
+    "blog",
+    "media"
+  ],
+  "module_id": 62400199807,
+  "label": "Internal Page Hero",
+  "is_available_for_new_content": true
 }

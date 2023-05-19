@@ -1,8 +1,17 @@
 {
-  "global" : false,
-  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
-  "icon" : "../../images/module-icons/featured-blog-post.svg",
-  "module_id" : 61913317438,
-  "label" : "Featured Blog Post",
-  "is_available_for_new_content" : true
+  "global": false,
+  "host_template_types": [
+    "PAGE",
+    "BLOG_POST",
+    "BLOG_LISTING"
+  ],
+  "icon": "../../images/module-icons/featured-blog-post.svg",
+  "categories": [
+    "blog",
+    "body_content",
+    "media"
+  ],
+  "module_id": 61913317438,
+  "label": "Featured Blog Post",
+  "is_available_for_new_content": true
 }

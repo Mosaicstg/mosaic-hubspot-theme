@@ -1,8 +1,16 @@
 {
-  "global" : false,
-  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
-  "icon" : "../../images/module-icons/overlapping-split-grid.svg",
-  "module_id" : 60971916144,
-  "label" : "Overlapping Split Grid",
-  "is_available_for_new_content" : true
+  "global": false,
+  "host_template_types": [
+    "PAGE",
+    "BLOG_POST",
+    "BLOG_LISTING"
+  ],
+  "icon": "../../images/module-icons/overlapping-split-grid.svg",
+  "categories": [
+    "body_content",
+    "media"
+  ],
+  "module_id": 60971916144,
+  "label": "Overlapping Split Grid",
+  "is_available_for_new_content": true
 }

@@ -1,8 +1,15 @@
 {
-  "global" : false,
-  "icon" : "../../images/module-icons/social-media.svg",
-  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
-  "module_id" : 60289587769,
-  "label" : "Social Follow",
-  "is_available_for_new_content" : true
+  "global": false,
+  "icon": "../../images/module-icons/social-media.svg",
+  "host_template_types": [
+    "PAGE",
+    "BLOG_POST",
+    "BLOG_LISTING"
+  ],
+  "module_id": 60289587769,
+  "categories": [
+    "social"
+  ],
+  "label": "Social Follow",
+  "is_available_for_new_content": true
 }

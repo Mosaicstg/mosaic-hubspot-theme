@@ -1,8 +1,15 @@
 {
-  "global" : false,
-  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
-  "icon" : "../../images/module-icons/action-link.svg",
-  "module_id" : 60788786079,
-  "label" : "Three Column Action Grid",
-  "is_available_for_new_content" : true
+  "global": false,
+  "host_template_types": [
+    "PAGE",
+    "BLOG_POST",
+    "BLOG_LISTING"
+  ],
+  "icon": "../../images/module-icons/action-link.svg",
+  "categories": [
+    "forms_and_buttons"
+  ],
+  "module_id": 60788786079,
+  "label": "Three Column Action Grid",
+  "is_available_for_new_content": true
 }

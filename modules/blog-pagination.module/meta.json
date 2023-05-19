@@ -1,9 +1,14 @@
 {
-  "global" : false,
-  "master_language" : "en",
-  "icon" : "../../images/module-icons/ellipses.svg",
-  "host_template_types" : [ "BLOG_LISTING" ],
-  "module_id" : 60289587753,
-  "label" : "Blog Pagination",
-  "is_available_for_new_content" : true
+  "global": false,
+  "master_language": "en",
+  "icon": "../../images/module-icons/ellipses.svg",
+  "host_template_types": [
+    "BLOG_LISTING"
+  ],
+  "categories": [
+    "blog"
+  ],
+  "module_id": 60289587753,
+  "label": "Blog Pagination",
+  "is_available_for_new_content": true
 }
