@@ -10,6 +10,16 @@
   "categories": [
     "functionality"
   ],
+  "content_tags": [
+    {
+      "name": "MENU",
+      "source": "USER"
+    },
+    {
+      "name": "NAVIGATION",
+      "source": "USER"
+    }
+  ],
   "label": "Menu",
   "is_available_for_new_content": true
 }

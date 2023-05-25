@@ -9,6 +9,12 @@
   "categories": [
     "forms_and_buttons"
   ],
+  "content_tags": [
+    {
+      "name": "ICON",
+      "source": "USER"
+    }
+  ],
   "icon": "../../images/module-icons/link.svg",
   "label": "Link with Icon",
   "is_available_for_new_content": true

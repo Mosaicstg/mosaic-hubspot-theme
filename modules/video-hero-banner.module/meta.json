@@ -10,6 +10,16 @@
     "body_content",
     "media"
   ],
+  "content_tags": [
+    {
+      "name": "VIDEO",
+      "source": "USER"
+    },
+    {
+      "name": "BANNER",
+      "source": "USER"
+    }
+  ],
   "icon": "../../images/module-icons/video.svg",
   "label": "Video Hero Banner",
   "is_available_for_new_content": true

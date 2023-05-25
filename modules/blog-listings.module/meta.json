@@ -9,6 +9,12 @@
     "blog",
     "media"
   ],
+  "content_tags": [
+    {
+      "name": "BLOG",
+      "source": "USER"
+    }
+  ],
   "module_id": 60286975556,
   "label": "Blog Listings",
   "is_available_for_new_content": true

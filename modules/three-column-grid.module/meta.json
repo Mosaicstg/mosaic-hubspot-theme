@@ -9,6 +9,12 @@
   "categories": [
     "forms_and_buttons"
   ],
+  "content_tags": [
+    {
+      "name": "LAYOUT",
+      "source": "USER"
+    }
+  ],
   "module_id": 60788786079,
   "label": "Three Column Action Grid",
   "is_available_for_new_content": true

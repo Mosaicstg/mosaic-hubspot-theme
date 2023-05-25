@@ -11,6 +11,12 @@
     "body_content",
     "media"
   ],
+  "content_tags": [
+    {
+      "name": "BLOG",
+      "source": "USER"
+    }
+  ],
   "module_id": 61913317438,
   "label": "Featured Blog Post",
   "is_available_for_new_content": true

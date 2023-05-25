@@ -9,6 +9,20 @@
   "categories": [
     "forms_and_buttons"
   ],
+  "content_tags": [
+    {
+      "name": "INTERACTION",
+      "source": "USER"
+    },
+    {
+      "name": "CONVERSION",
+      "source": "USER"
+    },
+    {
+      "name": "BUTTONS",
+      "source": "USER"
+    }
+  ],
   "module_id": 60977780823,
   "label": "Action Center",
   "is_available_for_new_content": true

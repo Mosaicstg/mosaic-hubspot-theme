@@ -8,6 +8,12 @@
   "categories": [
     "blog"
   ],
+  "content_tags": [
+    {
+      "name": "BLOG",
+      "source": "USER"
+    }
+  ],
   "module_id": 60289587753,
   "label": "Blog Pagination",
   "is_available_for_new_content": true

@@ -7,6 +7,16 @@
   "categories": [
     "forms_and_buttons"
   ],
+  "content_tags": [
+    {
+      "name": "BUTTON",
+      "source": "USER"
+    },
+    {
+      "name": "CTA",
+      "source": "USER"
+    }
+  ],
   "module_id": 60289587755,
   "label": "Button",
   "is_available_for_new_content": true

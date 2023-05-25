@@ -9,6 +9,12 @@
   "categories": [
     "design"
   ],
+  "content_tags": [
+    {
+      "name": "LAYOUT",
+      "source": "USER"
+    }
+  ],
   "module_id": 60904303890,
   "label": "Vertical Bar",
   "is_available_for_new_content": true

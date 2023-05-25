@@ -10,6 +10,12 @@
   "categories": [
     "social"
   ],
+  "content_tags": [
+    {
+      "name": "SOCIAL",
+      "source": "USER"
+    }
+  ],
   "label": "Social Follow",
   "is_available_for_new_content": true
 }

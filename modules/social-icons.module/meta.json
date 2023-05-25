@@ -9,6 +9,16 @@
   "categories": [
     "social"
   ],
+  "content_tags": [
+    {
+      "name": "SOCIAL",
+      "source": "USER"
+    },
+    {
+      "name": "ICON",
+      "source": "USER"
+    }
+  ],
   "module_id": 60796357783,
   "label": "Header Social Icons",
   "is_available_for_new_content": true

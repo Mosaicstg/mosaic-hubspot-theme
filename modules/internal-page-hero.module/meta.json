@@ -10,6 +10,16 @@
     "blog",
     "media"
   ],
+  "content_tags": [
+    {
+      "name": "IMAGE",
+      "source": "USER"
+    },
+    {
+      "name": "BANNER",
+      "source": "USER"
+    }
+  ],
   "module_id": 62400199807,
   "label": "Internal Page Hero",
   "is_available_for_new_content": true

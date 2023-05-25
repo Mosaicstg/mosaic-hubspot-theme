@@ -10,6 +10,16 @@
     "body_content",
     "media"
   ],
+  "content_tags": [
+    {
+      "name": "IMAGE",
+      "source": "USER"
+    },
+    {
+      "name": "TEXT",
+      "source": "USER"
+    }
+  ],
   "icon": "../../images/module-icons/square-image.svg",
   "label": "Image with Caption",
   "is_available_for_new_content": true

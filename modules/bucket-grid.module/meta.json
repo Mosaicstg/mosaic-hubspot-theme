@@ -12,6 +12,24 @@
     "text",
     "media"
   ],
+  "content_tags": [
+    {
+      "name": "IMAGE",
+      "source": "USER"
+    },
+    {
+      "name": "ICON",
+      "source": "USER"
+    },
+    {
+      "name": "LIST",
+      "source": "USER"
+    },
+    {
+      "name": "TEXT",
+      "source": "USER"
+    }
+  ],
   "label": "Bucket Grid",
   "is_available_for_new_content": true
 }

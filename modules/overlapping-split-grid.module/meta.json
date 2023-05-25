@@ -10,6 +10,16 @@
     "body_content",
     "media"
   ],
+  "content_tags": [
+    {
+      "name": "LAYOUT",
+      "source": "USER"
+    },
+    {
+      "name": "TEXT",
+      "source": "USER"
+    }
+  ],
   "module_id": 60971916144,
   "label": "Overlapping Split Grid",
   "is_available_for_new_content": true
