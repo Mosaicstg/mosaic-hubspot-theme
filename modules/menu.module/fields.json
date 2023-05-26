@@ -2,7 +2,7 @@
   {
     "id": "menu",
     "name": "menu",
-    "label": "Navigation Menu",
+    "label": "Menu",
     "required": false,
     "locked": false,
     "type": "menu",
