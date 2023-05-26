@@ -1,15 +1,38 @@
 [
   {
-    "id": "310bf487-709a-f49a-9c92-0a9604bef1c8",
-    "name": "bar_color",
-    "display_width": null,
-    "label": "Bar Color",
-    "required": false,
-    "locked": false,
-    "type": "color",
+    "type": "number",
+    "id": "e3d9c377-c0c2-3d28-54a7-9c103665ad1b",
+    "display": "text",
+    "step": 1,
+    "label": "Bar Height",
+    "name": "bar_height",
+    "suffix": "px",
+    "default": 100
+  },
+  {
+    "type": "group",
+    "isNew": false,
+    "name": "style",
+    "label": "Style",
+    "tab": "STYLE",
+    "id": "03aa8cf4-4930-62d7-66f3-acac5df3c26f",
+    "children": [
+      {
+        "type": "color",
+        "id": "33a51a91-49c2-750a-1305-ef3891692377",
+        "default": {
+          "color": "#88ABC4",
+          "opacity": 100
+        },
+        "label": "Bar Color",
+        "name": "bar_color"
+      }
+    ],
     "default": {
-      "color": "#88ABC4",
-      "opacity": 100
+      "bar_color": {
+        "color": "#88ABC4",
+        "opacity": 100
+      }
     }
   }
 ]
