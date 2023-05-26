@@ -1,36 +1,49 @@
 [
   {
+    "default": "Featured News",
+    "display_width": null,
     "id": "d2bb5b6c-a9b9-2cf6-9032-b59872f1fd31",
-    "name": "tag",
-    "display_width": null,
     "label": "Tag",
-    "required": false,
     "locked": false,
+    "name": "tag",
+    "required": false,
     "tag_value": "ALL",
-    "type": "tag",
-    "default": "Featured News"
+    "type": "tag"
   },
   {
+    "default": 61598684288,
+    "display_width": null,
     "id": "cba7c9e2-cf44-4deb-4fd2-9fc391c1fb33",
-    "name": "blog",
-    "display_width": null,
     "label": "Blog",
-    "required": false,
     "locked": false,
-    "type": "blog",
-    "default": 61598684288
+    "name": "blog",
+    "required": false,
+    "type": "blog"
   },
   {
-    "id": "adfdba3c-50e3-a90a-faf6-c49d201e4b6d",
-    "name": "background_color",
-    "display_width": null,
-    "label": "Background Color",
-    "required": false,
-    "locked": false,
-    "type": "color",
+    "type": "group",
+    "isNew": false,
+    "name": "style",
+    "label": "Style",
+    "tab": "STYLE",
+    "id": "096ce95f-bb2a-6a80-bd8f-8bebf91582c2",
+    "children": [
+      {
+        "type": "color",
+        "id": "7ef4ff7c-2b4b-9848-bd6d-0ab07d78d40f",
+        "default": {
+          "color": "#ffffff",
+          "opacity": 100
+        },
+        "label": "Background Color",
+        "name": "background_color"
+      }
+    ],
     "default": {
-      "color": "#ffffff",
-      "opacity": 100
+      "background_color": {
+        "color": "#ffffff",
+        "opacity": 100
+      }
     }
   }
 ]
