@@ -1,81 +1,117 @@
-[ {
-  "id" : "7240e80c-7d11-8ddd-4ad8-e1350b66f0cc",
-  "name" : "text",
-  "display_width" : null,
-  "label" : "Text",
-  "required" : false,
-  "locked" : false,
-  "validation_regex" : "",
-  "allow_new_line" : false,
-  "show_emoji_picker" : false,
-  "type" : "text",
-  "default" : "Read about our values"
-}, {
-  "id" : "e5d45415-ac19-0ce5-686b-078dcf20b066",
-  "name" : "font_weight",
-  "display_width" : null,
-  "label" : "Font Weight",
-  "required" : false,
-  "locked" : false,
-  "display" : "select",
-  "choices" : [ [ "400", "Regular" ], [ "600", "Bold" ] ],
-  "multiple" : false,
-  "reordering_enabled" : true,
-  "type" : "choice",
-  "default" : "600"
-}, {
-  "id" : "cc901d7d-3376-a93b-f612-8ce961db16b4",
-  "name" : "text_color",
-  "display_width" : null,
-  "label" : "Text Color",
-  "required" : false,
-  "locked" : false,
-  "type" : "color",
-  "default" : {
-    "color" : "#516984",
-    "opacity" : 100
-  }
-}, {
-  "id" : "ee2eda98-dd5e-83dc-8c55-f33fb1dd9c7a",
-  "name" : "link",
-  "display_width" : null,
-  "label" : "Link",
-  "required" : false,
-  "locked" : false,
-  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
-  "show_advanced_rel_options" : false,
-  "type" : "link",
-  "default" : {
-    "url" : {
-      "type" : "EXTERNAL",
-      "href" : "https://www.google.com/",
-      "content_id" : null
+[
+  {
+    "allow_new_line": false,
+    "default": "Read about our values",
+    "display_width": null,
+    "id": "7240e80c-7d11-8ddd-4ad8-e1350b66f0cc",
+    "label": "Text",
+    "locked": false,
+    "name": "text",
+    "required": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "validation_regex": ""
+  },
+  {
+    "choices": [
+      [
+        "400",
+        "Regular"
+      ],
+      [
+        "600",
+        "Bold"
+      ]
+    ],
+    "default": "600",
+    "display": "select",
+    "display_width": null,
+    "id": "e5d45415-ac19-0ce5-686b-078dcf20b066",
+    "label": "Font Weight",
+    "locked": false,
+    "multiple": false,
+    "name": "font_weight",
+    "preset": null,
+    "reordering_enabled": true,
+    "required": false,
+    "type": "choice"
+  },
+  {
+    "default": {
+      "url": {
+        "type": "EXTERNAL",
+        "href": "https://www.google.com/",
+        "content_id": null
+      },
+      "open_in_new_tab": false,
+      "no_follow": false
     },
-    "open_in_new_tab" : false,
-    "no_follow" : false
+    "display_width": null,
+    "id": "ee2eda98-dd5e-83dc-8c55-f33fb1dd9c7a",
+    "label": "Link",
+    "locked": false,
+    "name": "link",
+    "required": false,
+    "show_advanced_rel_options": false,
+    "supported_types": [
+      "EXTERNAL",
+      "CONTENT",
+      "FILE",
+      "EMAIL_ADDRESS",
+      "BLOG"
+    ],
+    "type": "link"
+  },
+  {
+    "default": {
+      "name": "Alternate Long Arrow Right",
+      "unicode": "f30b",
+      "type": "SOLID"
+    },
+    "display_width": null,
+    "icon_set": "fontawesome-5.14.0",
+    "id": "1e4f3dca-7000-b450-f03a-ccf1ef1e972c",
+    "label": "Icon",
+    "locked": false,
+    "name": "icon",
+    "required": false,
+    "type": "icon"
+  },
+  {
+    "default": true,
+    "display": "checkbox",
+    "display_width": null,
+    "id": "51feebcc-6868-0837-8b24-c855d6b4fb4b",
+    "label": "Display Icon",
+    "locked": false,
+    "name": "display_icon",
+    "required": false,
+    "type": "boolean"
+  },
+  {
+    "type": "group",
+    "isNew": false,
+    "name": "style",
+    "label": "Style",
+    "tab": "STYLE",
+    "id": "d2702b58-d46c-94c8-49cf-98e35d43eec9",
+    "children": [
+      {
+        "type": "color",
+        "id": "42006c9a-9eac-3cdc-98da-353d3a59a5a1",
+        "default": {
+          "color": "#516984",
+          "opacity": 100
+        },
+        "label": "Text Color",
+        "name": "text_color"
+      }
+    ],
+    "default": {
+      "text_color": {
+        "color": "#516984",
+        "opacity": 100
+      }
+    }
   }
-}, {
-  "id" : "1e4f3dca-7000-b450-f03a-ccf1ef1e972c",
-  "name" : "icon",
-  "display_width" : null,
-  "label" : "Icon",
-  "required" : false,
-  "locked" : false,
-  "icon_set" : "fontawesome-5.14.0",
-  "type" : "icon",
-  "default" : {
-    "name" : "Alternate Long Arrow Right",
-    "unicode" : "f30b",
-    "type" : "SOLID"
-  }
-}, {
-  "id" : "51feebcc-6868-0837-8b24-c855d6b4fb4b",
-  "name" : "display_icon",
-  "display_width" : null,
-  "label" : "Display Icon",
-  "required" : false,
-  "locked" : false,
-  "display" : "checkbox",
-  "type" : "boolean",
-  "default" : true
-} ]
+]
