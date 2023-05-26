@@ -2,7 +2,7 @@
   {
     "id": "link",
     "name": "link",
-    "label": "Button link",
+    "label": "Button Link",
     "required": false,
     "locked": false,
     "supported_types": ["EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS"],
