@@ -18,7 +18,7 @@
     <article class="blog-post">
       {# Featured image #}
       {% if content.featured_image %}
-        <img src="{{ content.featured_image }}">
+        <img src="{{ content.featured_image }}" alt="{{ content.featured_image_alt_text }}">
       {% endif %}
       <div class="blog-post__meta">
         <time datetime="{{ content.publish_date }}" class="blog-post__timestamp">
