@@ -1,25 +1,30 @@
+.bucket-grid-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .bucket-grid-column {
-  float: left;
-  width: 33.33%;
-  margin-bottom: 40px;
+    float: left;
+    width: 33.33%;
+    margin-bottom: 40px;
 }
 
 /* Clear floats after the columns */
 .bucket-grid-row:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
 @media only screen and (max-width: 720px) {
     .bucket-grid-column {
-    width: 100%;
-  }
+        width: 100%;
+    }
 }
 
 .bucket-circle {
-  text-align: center;
-  margin-bottom: 30px;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .bucket-circle h2 {
