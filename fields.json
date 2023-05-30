@@ -26,6 +26,7 @@
             "opacity": true
           }
         },
+        "alternate_names": ["secondary_color"],
         "default": {
           "color": "#516984"
         }
@@ -104,6 +105,7 @@
             "color": "theme.global_colors.primary_color.color"
           }
         },
+        "alternate_names": ["body_font"],
         "default": {
           "fallback": "sans-serif",
           "font": "DM Sans",
@@ -125,6 +127,7 @@
             "color": "theme.global_colors.primary_color.color"
           }
         },
+        "alternate_names": ["heading_font"],
         "default": {
           "fallback": "sans-serif",
           "font": "DM Sans",
