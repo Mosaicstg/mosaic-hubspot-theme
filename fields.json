@@ -15,6 +15,11 @@
         },
         "default": {
           "color": "#333333"
+        },
+        "inherited_value": {
+          "property_value_paths": {
+            "color": "brand_settings.colors[0]"
+          }
         }
       },
       {
@@ -29,6 +34,11 @@
         "alternate_names": ["secondary_color"],
         "default": {
           "color": "#516984"
+        },
+        "inherited_value": {
+          "property_value_paths": {
+            "color": "brand_settings.colors[1]"
+          }
         }
       },
       {
@@ -42,6 +52,11 @@
         },
         "default": {
           "color": "#88ABC4"
+        },
+        "inherited_value": {
+          "property_value_paths": {
+            "color": "brand_settings.colors[2]"
+          }
         }
       },
       {
@@ -55,6 +70,11 @@
         },
         "default": {
           "color": "#EBEBEB"
+        },
+        "inherited_value": {
+          "property_value_paths": {
+            "color": "brand_settings.colors[3]"
+          }
         }
       },
       {
@@ -81,6 +101,11 @@
         },
         "default": {
           "color": "#FFFFFF"
+        },
+        "inherited_value": {
+          "property_value_paths": {
+            "color": "brand_settings.colors[4]"
+          }
         }
       }
     ]
