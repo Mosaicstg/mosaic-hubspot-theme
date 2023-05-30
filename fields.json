@@ -88,6 +88,11 @@
         },
         "default": {
           "color": "#EDEDED"
+        },
+        "inherited_value": {
+          "property_value_paths": {
+            "color": "brand_settings.colors[4]"
+          }
         }
       },
       {
@@ -104,7 +109,7 @@
         },
         "inherited_value": {
           "property_value_paths": {
-            "color": "brand_settings.colors[4]"
+            "color": "brand_settings.colors[5]"
           }
         }
       }
