@@ -19,7 +19,7 @@
       },
       {
         "label": "Secondary",
-        "name": "secondary _color",
+        "name": "secondary",
         "type": "color",
         "visibility": {
           "hidden_subfields": {
